@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Laravel 5.6 CRUD Tutorial With Example  </title>
+    <title>Create Products</title>
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css" rel="stylesheet">
@@ -13,69 +13,50 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
   </head>
   <body>
-    <div class="container">
-      <h2>Product Appointment System</h2><br/>
-      <form method="post" action="{{url('products')}}" enctype="multipart/form-data">
-        @csrf
-        <div class="row">
-          <div class="col-md-4"></div>
-          <div class="form-group col-md-4">
-            <label for="Name">Name:</label>
-            <input type="text" class="form-control" name="name">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4"></div>
-            <div class="form-group col-md-4">
-              <label for="Email">Email:</label>
-              <input type="text" class="form-control" name="email">
-            </div>
-          </div>
-        <div class="row">
-          <div class="col-md-4"></div>
-            <div class="form-group col-md-4">
-              <label for="Number">Phone Number:</label>
-              <input type="text" class="form-control" name="number">
-            </div>
-          </div>
-        <div class="row">
-          <div class="col-md-4"></div>
-          <div class="form-group col-md-4">
-            <input type="file" name="filename">
-         </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4"></div>
-          <div class="form-group col-md-4">
-            <strong>Date : </strong>
-            <input class="date form-control"  type="text" id="datepicker" name="date">
-         </div>
-        </div>
-         <div class="row">
-          <div class="col-md-4"></div>
-            <div class="form-group col-md-4">
-                <lable>Product Office</lable>
-                <select name="office">
-                  <option value="Mumbai">Mumbai</option>
-                  <option value="Chennai">Chennai</option>
-                  <option value="Delhi">Delhi</option>
-                  <option value="Bangalore">Bangalore</option>
-                </select>
-            </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4"></div>
-          <div class="form-group col-md-4" style="margin-top:60px">
-            <button type="submit" class="btn btn-success">Submit</button>
-          </div>
-        </div>
-      </form>
-    </div>
-    <script type="text/javascript">
-        $('#datepicker').datepicker({
-            autoclose: true,
-            format: 'dd-mm-yyyy'
-         });
-    </script>
+    <img style="position:absolute; TOP:210px; LEFT:70px; HEIGHT:35PX; WIDTH:100PX" src="/images/vintage.png">
+
+    <style>
+      .table{
+        position: relative;
+        width:500px;
+        margin:0 auto 0 auto;
+        margin-top: 230px;
+        background:#ffffff;
+        height:300px;
+      }
+    </style>
+
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Product Name</th>
+      <th scope="col">Product Subname</th>
+      <th scope="col">Price</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+
+
   </body>
 </html>
