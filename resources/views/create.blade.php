@@ -28,6 +28,12 @@
       .table-buffer{
         margin-top: 40px;
       }
+
+      .btn-primary-outline {
+        background-color: transparent;
+        border-color: transparent;
+        box-shadow: none;
+      }
     </style>
 
 
@@ -47,7 +53,7 @@
 
       <div class="row top-buffer">
         <div class="col-md-2">
-          <button type="button" class="btn btn btn-md">MENU</button>
+          <button type="button" class="btn-primary-outline">MENU</button>
         </div>
         <div class="col-md-2">
           <td><button type="button" class="btn btn-primary btn-md">ADD PRODUCT</button>
