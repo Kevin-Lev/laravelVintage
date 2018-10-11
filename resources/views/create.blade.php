@@ -13,50 +13,115 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
   </head>
   <body>
-    <img style="position:absolute; TOP:210px; LEFT:70px; HEIGHT:35PX; WIDTH:100PX" src="/images/vintage.png">
 
     <style>
       .table{
+        text-align: center;
+      }
+      .container{
         position: relative;
-        width:500px;
-        margin:0 auto 0 auto;
-        margin-top: 230px;
-        background:#ffffff;
-        height:300px;
+        top: 200px;
+      }
+      .top-buffer{
+        margin-top: 100px;
+      }
+      .table-buffer{
+        margin-top: 40px;
       }
     </style>
 
-    <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Product Name</th>
-      <th scope="col">Product Subname</th>
-      <th scope="col">Price</th>
-      <th scope="col">Actions</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <img src="/images/vintage.png">
+        </div>
+        <div class="col-md-2">
+          <img src="/images/personIcon.png">
+        </div>
+        <div class="col-md-2">
+          <button type="button" class="btn btn-sm">SIGN OUT</button>
+        </div>
+      </div>
+
+
+      <div class="row top-buffer">
+        <div class="col-md-2">
+          <button type="button" class="btn btn btn-md">MENU</button>
+        </div>
+        <div class="col-md-2">
+          <td><button type="button" class="btn btn-primary btn-md">ADD PRODUCT</button>
+        </div>
+        <div class="col-md-3">
+          <td><button type="button" class="btn btn-primary btn-md">IMPORT PRODUCT</button>
+        </div>
+        <div class="col-xs-3">
+          <input type="text" class="form-control" id="search">
+        </div>
+        <div class="col-md-1">
+          <td><button type="button" class="btn btn-primary btn-md">SEARCH</button>
+        </div>
+      </div>
+
+
+    <div class="row align-items-center table-buffer">
+      <div class="col">
+        <div class="row">
+          <button type="button" class="btn btn-sm">PRODUCTS</button>
+        </div>
+
+          <div class="row">
+            <button type="button" class="btn btn btn-sm">ORDERS</button>
+          </div>
+
+            <div class="row">
+              <button type="button" class="btn btn btn-sm">CUSTOMERS</button>
+            </div>
+
+            <div class="row">
+              <button type="button" class="btn btn btn-sm">ANALYTICS</button>
+            </div>
+
+            <div class="row">
+              <button type="button" class="btn btn btn-sm">DISCOUNTS</button>
+            </div>
+      </div>
+
+
+        <div class="col-md-10">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="text-center">Product Name</th>
+                <th class="text-center">Product Subname</th>
+                <th class="text-center">Price</th>
+                <th class="text-center">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Kevin</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td><button type="button" class="btn btn-primary btn-md">EDIT</button> <button type="button" class="btn btn-danger">DELETE</button></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td><button type="button" class="btn btn-primary">EDIT</button> <button type="button" class="btn btn-danger">DELETE</button></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td><button type="button" class="btn btn-primary">EDIT</button> <button type="button" class="btn btn-danger">DELETE</button></td>
+              </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+ </div>
 
   </body>
 </html>
