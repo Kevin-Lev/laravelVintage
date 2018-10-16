@@ -21,11 +21,11 @@
         border: 1px solid;
         border-color: #F5F5F5;
         padding-left: 20px;
+        overflow: auto;
       }
       .container{
         position: relative;
         top: 200px;
-
       }
       .top-buffer{
         padding-top: 60px;
@@ -155,7 +155,7 @@
               </tr>
             </thead>
             <tbody>
-              
+
             </tbody>
         </table>
         </div>
