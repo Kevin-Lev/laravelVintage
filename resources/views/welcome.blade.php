@@ -16,20 +16,16 @@
     <style>
       .vintage{
         padding-top: 250px;
-        text-align: center;
+        padding-left: 20px;
       }
 
       .input{
         padding-top: 30px;
-        padding-left: 70px;
-        padding-right: 60px;
+
       }
 
-      .signin{
-        padding-left: 35px;
-      }
-
-      .signup{
+      .row-2018{
+        padding-top: 230px;
         padding-left: 25px;
       }
 
@@ -37,8 +33,15 @@
         background-color: transparent;
         border-color: transparent;
         box-shadow: none;
-        font-size: 15px;
         color: blue;
+      }
+
+      .label-primary-outline {
+        background-color: transparent;
+        border-color: transparent;
+        box-shadow: none;
+        font-size: 15px;
+        color: black;
         font-family: sans-serif;
       }
 
@@ -46,7 +49,7 @@
 
     <div class="container">
       <div class="row justify-content-center vintage">
-        <div class="col-md-12">
+        <div class="col-md-4">
           <img src="/images/bigvintage.png">
         </div>
       </div>
@@ -61,18 +64,23 @@
         </div>
       </div>
 
-      <div class="row justify-content-center input ">
-        <div class="col-md-2 signin">
+      <div class="row justify-content-center input">
+        <div class="col-md-1 ">
           <td><button type="button" class="btn btn-primary btn-md">sign in</button>
         </div>
       </div>
 
       <div class="row justify-content-center input">
-        <div class="col-md-2 signup">
+        <div class="col-md-1 ">
           <td><button type="button" class="btn btn-primary-outline btn-md">sign up</button>
         </div>
       </div>
 
+      <div class="row justify-content-center row-2018">
+        <div class="col-md-4">
+          <span class="label label-primary-outline">2018 Vintage - All rights reserved.</span>
+        </div>
+      </div>
 
     </div>
 
