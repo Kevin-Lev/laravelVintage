@@ -25,8 +25,8 @@
       }
 
       .row-2018{
-        padding-top: 230px;
-        padding-left: 25px;
+        padding-top: 190px;
+        padding-left: 32px;
       }
 
       .btn-primary-outline {
