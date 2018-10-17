@@ -20,7 +20,8 @@
         background-color: white;
         border: 1px solid;
         border-color: #F5F5F5;
-        padding-left: 20px;
+        width: 1000px;
+        margin-left: 50px;
         overflow: auto;
       }
       .container{
@@ -120,6 +121,21 @@
       <div class="col">
           <div class="row">
             <button type="button" class="btn btn-primary-outline btn-sm">PRODUCTS</button>
+            <div class="col-md-10">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="text-center">Product Name</th>
+                    <th class="text-center">Product Subname</th>
+                    <th class="text-center">Price</th>
+                    <th class="text-center">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            </div>
           </div>
 
           <div class="row">
@@ -144,26 +160,12 @@
       </div>
 
 
-        <div class="col-md-10">
-          <table class="table">
-            <thead>
-              <tr>
-                <th class="text-center">Product Name</th>
-                <th class="text-center">Product Subname</th>
-                <th class="text-center">Price</th>
-                <th class="text-center">Actions</th>
-              </tr>
-            </thead>
-            <tbody>
 
-            </tbody>
-        </table>
-        </div>
     </div>
 
     <div class="row row-label">
       <div class="col-md-12">
-        <span class="label label-primary-outline">2018 Vintage - All rights reserved</span>
+        <span class="label label-primary-outline.">2018 Vintage - All rights reserved</span>
       </div>
     </div>
 

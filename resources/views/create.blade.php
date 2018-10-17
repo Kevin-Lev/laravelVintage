@@ -33,7 +33,7 @@
       }
 
       .row-label{
-        padding-top: 210px;
+        padding-top: 59px;
         padding-bottom: 20px;
         text-align: center;
         background: #F5F5F5;
@@ -91,13 +91,10 @@
         padding-right: 25px;
       }
 
-      .inputDesc{
-        padding-top: 150px;
-      }
-
       .inputDesc2{
-        padding-left: 202px;
-        padding-right: 90px;
+        height: 150px;
+        width: 270px;
+        padding-bottom: 130px;
       }
 
     </style>
@@ -158,11 +155,13 @@
               <div style="height: 35px;width: 35px;background-color: white;">
               </div>
             </div>
-            <div class="col" style="padding-right: 400px">
+            <div class="col" style="padding-right: 0px">
               <div style="height: 35px;width: 35px;background-color: white;">
               </div>
             </div>
-
+            <div class="col" style="padding-right: 300px">
+              <button type="button" class="btn btn-primary">ADD</button>
+            </div>
           </div>
 
           <div class="row">
@@ -181,22 +180,40 @@
             <div class="col-xs-4 input">
               <input type="text" class="form-control" placeholder="Price" id="proprice">
             </div>
+            <div class="col" style="padding-left:70px; padding-right:30px;">
+              <input type="text" class="form-control" placeholder="Tag" id="proprice">
+            </div>
+            <div class="col" style="padding-right: 180px;">
+              <button type="button" class="btn btn-primary">ADD</button>
+            </div>
           </div>
 
           <div class="row">
             <button type="button" class="btn btn-primary-outline btn-sm">APPS</button>
+            <div class="col" style="padding-left: 500px;padding-top:5px;padding-right:0px;">
+              <button type="button" class="btn btn-primary btn-xs" style="font-size:10px">PREMIUM</button>
+            </div>
+            <div class="col" style="padding-right: 0px;padding-top:5px;">
+              <button type="button" class="btn btn-primary btn-xs" style="font-size:10px">GOLD</button>
+            </div>
+            <div class="col" style="padding-right: 400px;padding-top:5px;">
+              <button type="button" class="btn btn-primary btn-xs" style="font-size:10px">BLACK</button>
+            </div>
           </div>
 
           <div class="row">
-            <div class="col-xs-6 inputDesc2">
-              <input type="text" class="form-control" style="padding-top: 150px;" placeholder="Description" id="prodesc">
+            <div class="col-xs-6 offset-md-2">
+              <input type="text" class="form-control inputDesc2" placeholder="Description" id="prodesc">
             </div>
           </div>
       </div>
-
     </div>
 
-
+    <div class="row row-label">
+      <div class="col-md-12">
+        <span class="label label-primary-outline">2018 Vintage - All rights reserved.</span>
+      </div>
+    </div>
  </div>
 
   </body>
