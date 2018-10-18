@@ -103,7 +103,7 @@
           <button type="button" class="btn-primary-menu">MENU</button>
         </div>
         <div class="col-md-2">
-          <td><button type="button" class="btn btn-primary btn-md">ADD PRODUCT</button>
+          <a href="products/create" class="btn btn-primary btn-md">ADD PRODUCT</a>
         </div>
         <div class="col-md-3">
           <td><button type="button" class="btn btn-primary btn-md">IMPORT PRODUCT</button>
@@ -120,7 +120,7 @@
     <div class="row table-buffer">
       <div class="col">
           <div class="row">
-            <button type="button" class="btn btn-primary-outline btn-sm">PRODUCTS</button>
+            <a href="/products" class="btn btn-primary-outline btn-sm">PRODUCTS</a>
           </div>
 
           <div class="row">
@@ -156,6 +156,25 @@
               </tr>
             </thead>
             <tbody>
+
+              @foreach($products as $product)
+
+                <tr>
+                  <td>{{$product['name']}}</td>
+                  <td>{{$product['subname']}}</td>
+                  <td>{{$product['price']}}</td>
+
+
+                  <td><a href="{{action('ProductController@edit', $product['id'])}}" class="btn btn-primary">Edit</a></td>
+                  <td>
+                    <form action="{{action('ProductController@destroy', $product['id'])}}" method="post">
+                      @csrf
+                      <input name="_method" type="hidden" value="DELETE">
+                      <button class="btn btn-danger" type="submit">Delete</button>
+                    </form>
+                  </td>
+                </tr>
+              @endforeach
 
             </tbody>
         </table>

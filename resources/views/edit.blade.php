@@ -101,8 +101,9 @@
 
 
     <div class="container">
-      <form method="post" action="{{url('products')}}" enctype="multipart/form-data">
+      <form method="post" action="{{action('ProductController@update', $id)}}">
         @csrf
+        <input name="_method" type="hidden" value="PATCH">
         <div class="row row-vintage">
           <div class="col-md-8 vimage">
             <img src="/images/vintage.png">
@@ -127,7 +128,7 @@
             <a href="/products" class="btn btn-primary btn-md">CANCEL</a>
           </div>
           <div class="col-md-2">
-            <td><button type="button" class="btn btn-danger btn-md" disabled>DELETE</button>
+            <td><button type="button" class="btn btn-danger btn-md">DELETE</button>
           </div>
           <div class="col-md-1">
             <td><button type="button" class="btn btn-primary btn-md">PREVIEW</button>
@@ -140,7 +141,7 @@
             <div class="row">
               <a href="/products" class="btn btn-primary-outline btn-sm">PRODUCTS</a>
               <div class="col-xs-4 input">
-                <input type="text" class="form-control" placeholder="Product name" name="name" id="proname">
+                <input type="text" class="form-control" placeholder="Product name" name="name" value="{{$product->name}}">
               </div>
               <div class="col offset-md-1">
                 <span class="label label-primary-image">IMAGES</span>
@@ -162,14 +163,14 @@
                 </div>
               </div>
               <div class="col" style="padding-right: 300px">
-                <input type="file" name="file1" class="form-control-file">
+                <button type="button" class="btn btn-primary">ADD</button>
               </div>
             </div>
 
             <div class="row">
               <button type="button" class="btn btn-primary-outline btn-sm">CUSTOMERS</button>
               <div class="col-xs-4 inputSub">
-                <input type="text" class="form-control" placeholder="Product subname" name="subname" id="prosub">
+                <input type="text" class="form-control" placeholder="Product subname" name="subname" value="{{$product->subname}}">
               </div>
             </div>
 
@@ -180,10 +181,10 @@
             <div class="row">
               <button type="button" class="btn btn-primary-outline btn-sm">DISCOUNTS</button>
               <div class="col-xs-4 input">
-                <input type="text" class="form-control" placeholder="Price" name="price" id="proprice">
+                <input type="text" class="form-control" placeholder="Price" name="price" value="{{$product->price}}">
               </div>
               <div class="col" style="padding-left:70px; padding-right:30px;">
-                <input type="text" class="form-control" placeholder="Tag" name="tag" id="proprice">
+                <input type="text" class="form-control" placeholder="Tag" name="tag" value="{{$product->tag}}">
               </div>
               <div class="col" style="padding-right: 180px;">
                 <button type="button" class="btn btn-primary">ADD</button>
@@ -205,7 +206,7 @@
 
             <div class="row">
               <div class="col-xs-6 offset-md-2">
-                <input type="text" class="form-control inputDesc2" name="description" placeholder="Description" id="prodesc">
+                <input type="text" class="form-control inputDesc2" name="description" placeholder="Description" value="{{$product->description}}">
               </div>
             </div>
         </div>

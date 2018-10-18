@@ -21,7 +21,6 @@
 
       .input{
         padding-top: 30px;
-
       }
 
       .row-2018{
@@ -66,7 +65,7 @@
 
       <div class="row justify-content-center input">
         <div class="col-md-1 ">
-          <td><button type="button" class="btn btn-primary btn-md">sign in</button>
+          <a href="/products" class="btn btn-primary btn-md">sign in</a>
         </div>
       </div>
 

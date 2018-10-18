@@ -35,7 +35,15 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $product = new \App\Product;
+        $product->name = $request->get('name');
+        $product->subname = $request->get('subname');
+        $product->price = $request->get('price');
+        $product->description = $request->get('description');
+        $product->tag = $request->get('tag');
+        $product->save();
+
+        return redirect('products')->with('success', 'Information has been added');
     }
 
     /**
@@ -57,7 +65,8 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
-        //
+        $product = \App\Product::find($id);
+        return view('edit', compact('product', 'id'));
     }
 
     /**
@@ -69,7 +78,15 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+      $product = \App\Product::find($id);
+      $product->name = $request->get('name');
+      $product->subname = $request->get('subname');
+      $product->price = $request->get('price');
+      $product->description = $request->get('description');
+      $product->tag = $request->get('tag');
+      $product->save();
+
+      return redirect('products');
     }
 
     /**
@@ -80,6 +97,8 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $product = \App\Product::find($id);
+        $product->delete();
+        return redirect('products')->with('success','Information has been deleted');
     }
 }
