@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Create Products</title>
+    <title>Edit Products</title>
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css" rel="stylesheet">
@@ -136,7 +136,7 @@
         </div>
 
 
-      <div class="row align-items-center table-buffer">
+      <div class="row table-buffer">
         <div class="col-md-12">
             <div class="row">
               <a href="/products" class="btn btn-primary-outline btn-sm">PRODUCTS</a>
@@ -151,21 +151,13 @@
             <div class="row">
               <button type="button" class="btn btn-primary-outline btn-sm">ORDERS</button>
               <div class="col offset-md-5" style="padding-left:0px;padding-right:0px">
-                <div style="height: 35px;width: 35px;background-color: white;">
-                </div>
+                <img src="{{asset("storage/categories/$product->photo")}}" alt="photo" height="50" width="100">
               </div>
-              <div class="col" style="padding-right: 0px">
-                <div style="height: 35px;width: 35px;background-color: white;">
-                </div>
-              </div>
-              <div class="col" style="padding-right: 0px">
-                <div style="height: 35px;width: 35px;background-color: white;">
-                </div>
-              </div>
-              <div class="col" style="padding-right: 300px">
-                <button type="button" class="btn btn-primary">ADD</button>
-              </div>
+              <form action="" method="post" enctype="multipart/form-data">
+                <input type="file" name="image">
+              </form>
             </div>
+
 
             <div class="row">
               <button type="button" class="btn btn-primary-outline btn-sm">CUSTOMERS</button>
@@ -206,7 +198,7 @@
 
             <div class="row">
               <div class="col-xs-6 offset-md-2">
-                <input type="text" class="form-control inputDesc2" name="description" placeholder="Description" value="{{$product->description}}">
+                <textarea class="form-control inputDesc2" placeholder="Description" name="description" value="{{$product->description}}"></textarea>
               </div>
             </div>
         </div>

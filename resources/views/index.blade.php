@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Create Products</title>
+    <title>Products Index</title>
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css" rel="stylesheet">
@@ -22,7 +22,7 @@
         border-color: #F5F5F5;
         padding-left: 20px;
         width: 840px;
-        overflow: auto;
+        overflow: scroll;
       }
       .container{
         position: relative;

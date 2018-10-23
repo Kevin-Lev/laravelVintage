@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Product;
 
 class ProductController extends Controller
 {
@@ -13,7 +14,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products=\App\Product::all();
+        $products= Product::all();
         return view('index', compact('products'));
     }
 
@@ -35,13 +36,48 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        $product = new \App\Product;
+        $product = new Product();
         $product->name = $request->get('name');
         $product->subname = $request->get('subname');
         $product->price = $request->get('price');
         $product->description = $request->get('description');
         $product->tag = $request->get('tag');
         $product->save();
+
+            // Define o valor default para a variável que contém o nome da imagem
+        $nameFile = null;
+
+        // Verifica se informou o arquivo e se é válido
+        if ($request->hasFile('image') && $request->file('image')->isValid()) {
+            //
+            // // Define um aleatório para o arquivo baseado no timestamps atual
+            // #$name = uniqid(date('HisYmd');
+            // $name = ;
+            //
+            // // Recupera a extensão do arquivo
+            // $extension =
+
+            // Define finalmente o nome
+            $nameFile = $product->id.$product->name.$request->image->extension();
+
+            // Faz o upload:
+            $upload = $request->image->storeAs('categories', $nameFile);
+            // Se tiver funcionado o arquivo foi armazenado em storage/app/public/categories/nomedinamicoarquivo.extensao
+
+            // Verifica se NÃO deu certo o upload (Redireciona de volta)
+            if ( !$upload ){
+                return redirect()
+                            ->back()
+                            ->with('error', 'Falha ao fazer upload')
+                            ->withInput();
+            }
+
+
+            $product->photo = $nameFile;
+            $product->save();
+
+          }
+
 
         return redirect('products')->with('success', 'Information has been added');
     }
@@ -65,7 +101,7 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
-        $product = \App\Product::find($id);
+        $product = Product::find($id);
         return view('edit', compact('product', 'id'));
     }
 
@@ -78,13 +114,49 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-      $product = \App\Product::find($id);
+      $product = Product::find($id);
       $product->name = $request->get('name');
       $product->subname = $request->get('subname');
       $product->price = $request->get('price');
       $product->description = $request->get('description');
       $product->tag = $request->get('tag');
+      //$upload = $request->image->storeAs('categories', $id."-".$product->name.".jpeg");
       $product->save();
+
+      // Define o valor default para a variável que contém o nome da imagem
+      $nameFile = null;
+
+      // Verifica se informou o arquivo e se é válido
+      if ($request->hasFile('image') && $request->file('image')->isValid()) {
+          //
+          // // Define um aleatório para o arquivo baseado no timestamps atual
+          // #$name = uniqid(date('HisYmd');
+          // $name = ;
+          //
+          // // Recupera a extensão do arquivo
+          // $extension =
+
+          // Define finalmente o nome
+          $nameFile = $product->id.$product->name.$request->image->extension();
+
+          // Faz o upload:
+          $upload = $request->image->storeAs('categories', $nameFile);
+          // Se tiver funcionado o arquivo foi armazenado em storage/app/public/categories/nomedinamicoarquivo.extensao
+
+          // Verifica se NÃO deu certo o upload (Redireciona de volta)
+          if ( !$upload ){
+              return redirect()
+                          ->back()
+                          ->with('error', 'Falha ao fazer upload')
+                          ->withInput();
+          }
+
+          $product->photo = $nameFile;
+          $product->save();
+
+        }
+
+
 
       return redirect('products');
     }
@@ -97,7 +169,7 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        $product = \App\Product::find($id);
+        $product = Product::find($id);
         $product->delete();
         return redirect('products')->with('success','Information has been deleted');
     }

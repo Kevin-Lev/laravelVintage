@@ -121,7 +121,7 @@
             <button type="button" class="btn-primary-menu">MENU</button>
           </div>
           <div class="col-md-1">
-            <td><button type="submit" class="btn btn-success btn-md">UPDATE</button>
+            <td><button type="submit" class="btn btn-success btn-md">SAVE</button>
           </div>
           <div class="col-md-1">
             <a href="/products" class="btn btn-primary btn-md">CANCEL</a>
@@ -150,20 +150,12 @@
             <div class="row">
               <button type="button" class="btn btn-primary-outline btn-sm">ORDERS</button>
               <div class="col offset-md-5" style="padding-left:0px;padding-right:0px">
-                <div style="height: 35px;width: 35px;background-color: white;">
-                </div>
+                <form action="" method="post" enctype="multipart/form-data">
+                  <input type="file" name="image">
+                </form>
               </div>
-              <div class="col" style="padding-right: 0px">
-                <div style="height: 35px;width: 35px;background-color: white;">
-                </div>
-              </div>
-              <div class="col" style="padding-right: 0px">
-                <div style="height: 35px;width: 35px;background-color: white;">
-                </div>
-              </div>
-              <div class="col" style="padding-right: 300px">
-                <input type="file" name="file1" class="form-control-file">
-              </div>
+
+
             </div>
 
             <div class="row">
@@ -180,7 +172,7 @@
             <div class="row">
               <button type="button" class="btn btn-primary-outline btn-sm">DISCOUNTS</button>
               <div class="col-xs-4 input">
-                <input type="text" class="form-control" placeholder="Price" name="price" id="proprice">
+                <input type="number" class="form-control" placeholder="Price" name="price" id="proprice">
               </div>
               <div class="col" style="padding-left:70px; padding-right:30px;">
                 <input type="text" class="form-control" placeholder="Tag" name="tag" id="proprice">
@@ -205,7 +197,7 @@
 
             <div class="row">
               <div class="col-xs-6 offset-md-2">
-                <input type="text" class="form-control inputDesc2" name="description" placeholder="Description" id="prodesc">
+                <textarea class="form-control inputDesc2" placeholder="Description" name="description"></textarea>
               </div>
             </div>
         </div>
