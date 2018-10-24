@@ -95,6 +95,11 @@
         height: 150px;
         width: 270px;
         padding-bottom: 130px;
+
+      }
+
+      .colInputs{
+        margin-right: 110px;
       }
 
     </style>
@@ -137,33 +142,33 @@
 
 
       <div class="row table-buffer">
-        <div class="col-md-12">
+        <div class="col">
             <div class="row">
               <a href="/products" class="btn btn-primary-outline btn-sm">PRODUCTS</a>
-              <div class="col-xs-4 input">
+              <!-- <div class="col-xs-4 input">
                 <input type="text" class="form-control" placeholder="Product name" name="name" value="{{$product->name}}">
               </div>
               <div class="col offset-md-1">
                 <span class="label label-primary-image">IMAGES</span>
-              </div>
+              </div> -->
             </div>
 
             <div class="row">
               <button type="button" class="btn btn-primary-outline btn-sm">ORDERS</button>
-              <div class="col offset-md-5" style="padding-left:0px;padding-right:0px">
+              <!-- <div class="col offset-md-5" style="padding-left:0px;padding-right:0px">
                 <img src="{{asset("storage/categories/$product->photo")}}" alt="photo" height="50" width="100">
               </div>
               <form action="" method="post" enctype="multipart/form-data">
                 <input type="file" name="image">
-              </form>
+              </form> -->
             </div>
 
 
             <div class="row">
               <button type="button" class="btn btn-primary-outline btn-sm">CUSTOMERS</button>
-              <div class="col-xs-4 inputSub">
+              <!-- <div class="col-xs-4 inputSub">
                 <input type="text" class="form-control" placeholder="Product subname" name="subname" value="{{$product->subname}}">
-              </div>
+              </div> -->
             </div>
 
             <div class="row">
@@ -172,7 +177,7 @@
 
             <div class="row">
               <button type="button" class="btn btn-primary-outline btn-sm">DISCOUNTS</button>
-              <div class="col-xs-4 input">
+              <!-- <div class="col-xs-4 input">
                 <input type="text" class="form-control" placeholder="Price" name="price" value="{{$product->price}}">
               </div>
               <div class="col" style="padding-left:70px; padding-right:30px;">
@@ -180,12 +185,12 @@
               </div>
               <div class="col" style="padding-right: 180px;">
                 <button type="button" class="btn btn-primary">ADD</button>
-              </div>
+              </div> -->
             </div>
 
             <div class="row">
               <button type="button" class="btn btn-primary-outline btn-sm">APPS</button>
-              <div class="col" style="padding-left: 500px;padding-top:5px;padding-right:0px;">
+              <!-- <div class="col" style="padding-left: 500px;padding-top:5px;padding-right:0px;">
                 <button type="button" class="btn btn-primary btn-xs" style="font-size:10px">PREMIUM</button>
               </div>
               <div class="col" style="padding-right: 0px;padding-top:5px;">
@@ -193,16 +198,93 @@
               </div>
               <div class="col" style="padding-right: 400px;padding-top:5px;">
                 <button type="button" class="btn btn-primary btn-xs" style="font-size:10px">BLACK</button>
+              </div> -->
+            </div>
+          </div>
+
+            <div class="col colInputs">
+              <div class="row" style="padding-left: 15px;">
+                <input type="text" class="form-control" placeholder="Product name" name="name" value="{{$product->name}}" style="width: 270px; ">
+              <!-- <div class="col offset-md-2">
+                <span class="label label-primary-image">IMAGES</span>
+              </div> -->
+            </div>
+
+              <!-- <div class="row">
+                <div class="col offset-md-5" style="padding-left:0px;padding-right:0px">
+                  <img src="{{asset("storage/categories/$product->photo")}}" alt="photo" height="90" width="100">
+                </div>
+                <form action="" method="post" enctype="multipart/form-data">
+                  <input type="file" name="image">
+                </form>
+              </div> -->
+
+              <div class="row" style="padding-top: 30px; padding-left:15px;">
+                  <input type="text" class="form-control" placeholder="Product subname" name="subname" value="{{$product->subname}}" style="width: 270px">
+              </div>
+
+
+
+              <div class="row" style="padding-top: 30px;padding-left:15px;">
+                  <input type="text" class="form-control" placeholder="Price" name="price" value="{{$product->price}}" style="width: 270px;">
+
+                <!-- <div class="col" style="padding-left:70px; padding-right:30px;">
+                  <input type="text" class="form-control" placeholder="Tag" name="tag" value="{{$product->tag}}">
+                </div>
+                <div class="col" style="padding-right: 180px;">
+                  <button type="button" class="btn btn-primary">ADD</button>
+                </div> -->
+              </div>
+
+              <!-- <div class="row">
+                <div class="col" style="padding-left: 500px;padding-top:5px;padding-right:0px;">
+                  <button type="button" class="btn btn-primary btn-xs" style="font-size:10px">PREMIUM</button>
+                </div>
+                <div class="col" style="padding-right: 0px;padding-top:5px;">
+                  <button type="button" class="btn btn-primary btn-xs" style="font-size:10px">GOLD</button>
+                </div>
+                <div class="col" style="padding-right: 30px;padding-top:5px;">
+                  <button type="button" class="btn btn-primary btn-xs" style="font-size:10px">BLACK</button>
+                </div>
+              </div> -->
+
+              <div class="row" style="padding-top: 40px; padding-right: 20px;">
+                <div class="col">
+                  <textarea class="form-control " placeholder="Description" name="description" value="{{$product->description}}" style="height: 190px;width: 270px;"></textarea>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col" style="margin-right:0px">
+              <div class="row">
+                <span class="label label-primary-image">IMAGE</span>
+              </div>
+              <div class="row">
+                <img src="{{asset("storage/categories/$product->photo")}}" alt="photo" height="200" width="200">
+              </div>
+              <div class="row" style="padding-top:20px">
+                  <input type="text" class="form-control" placeholder="Tag" name="tag" value="{{$product->tag}}" style="width:200px">
+
+              </div>
+              <div class="row">
+                <button type="button" class="btn btn-primary btn-xs" style="font-size:10px">PREMIUM</button>
+
+                  <button type="button" class="btn btn-primary btn-xs" style="font-size:10px; margin-left:25px">GOLD</button>
+
+
+                  <button type="button" class="btn btn-primary btn-xs" style="font-size:10px;margin-left:25px">BLACK</button>
               </div>
             </div>
 
-            <div class="row">
-              <div class="col-xs-6 offset-md-2">
-                <textarea class="form-control inputDesc2" placeholder="Description" name="description" value="{{$product->description}}"></textarea>
-              </div>
+            <div class="col" style="padding-right:50px;">
+              <form action="" method="post" enctype="multipart/form-data">
+                <input type="file" name="image">
+              </form>
+              <button type="button" class="btn btn-primary" style="margin-top: 215px;">ADD</button>
             </div>
+
         </div>
-      </div>
 
       <div class="row row-label">
         <div class="col-md-12">
