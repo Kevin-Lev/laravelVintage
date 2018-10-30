@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css" rel="stylesheet">
-    <script  data-src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
   </head>
   <body>
@@ -103,6 +103,9 @@
     <div class="container">
       <form method="post" action="{{url('products')}}" enctype="multipart/form-data">
         @csrf
+
+        
+
         <div class="row row-vintage">
           <div class="col-md-8 vimage">
             <img src="/images/vintage.png">
@@ -158,6 +161,8 @@
 
             </div>
 
+
+      
             <div class="row">
               <button type="button" class="btn btn-primary-outline btn-sm">CUSTOMERS</button>
               <div class="col-xs-4 inputSub">
@@ -174,24 +179,27 @@
               <div class="col-xs-4 input">
                 <input type="number" class="form-control" placeholder="Price" name="price" id="proprice">
               </div>
-              <div class="col" style="padding-left:70px; padding-right:30px;">
-                <input type="text" class="form-control" placeholder="Tag" name="tag" id="proprice">
+              <div class="col-xs-3" style="padding-left:70px; padding-right:0px;">
+                <input type="text" class="form-control" placeholder="Tag" name="tag" id="tag">
               </div>
-              <div class="col" style="padding-right: 180px;">
-                <button type="button" class="btn btn-primary">ADD</button>
-              </div>
+
+                {{-- <button type="button"  class="btn btn-primary">ADD</button> --}}
+                <div class="col">
+                  <a  onclick="inserirTag()" class="btn btn-primary">ADD</a>
+                </div>
+
+              {{-- href="{{ url('/tags/store/fff') }}" --}}
+
             </div>
 
             <div class="row">
               <button type="button" class="btn btn-primary-outline btn-sm">APPS</button>
-              <div class="col" style="padding-left: 500px;padding-top:5px;padding-right:0px;">
-                <button type="button" class="btn btn-primary btn-xs" style="font-size:10px">PREMIUM</button>
+              <div class="col offset-md-5" id="lugarDasTags">
+              
               </div>
-              <div class="col" style="padding-right: 0px;padding-top:5px;">
-                <button type="button" class="btn btn-primary btn-xs" style="font-size:10px">GOLD</button>
-              </div>
-              <div class="col" style="padding-right: 400px;padding-top:5px;">
-                <button type="button" class="btn btn-primary btn-xs" style="font-size:10px">BLACK</button>
+
+              <div id="lugarDosInputsDasTags">
+
               </div>
             </div>
 
@@ -210,6 +218,28 @@
       </div>
     </form>
    </div>
+
+
+   <script>
+     function inserirTag(){
+      //  pegar o que ta escrito no campo
+      var tagNoInput = $("#tag").val();
+      
+      // soltar um alert com o que escrito
+      // alert(tagNoInput);
+      
+
+      //toda vez que o botão foi clicado, ele tem que inserir uma tag no lugarDasTags
+      $("#lugarDasTags").append("<div class='col';'><button type='button' class='btn btn-primary btn-xs' style='font-size:10px'>"+tagNoInput+"</button></div>");
+      $("#lugarDosInputsDasTags").append("<input type='hidden' name='tags[]' value='"+tagNoInput+"'>");
+
+
+      // limpar o campo
+      $("#tag").val("");
+     }
+    
+   </script>
+
 
   </body>
 </html>

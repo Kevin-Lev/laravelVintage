@@ -15,4 +15,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/testebootstrap', function () {
+    return view('index2');
+});
+
 Route::resource('products','ProductController');
+// Route::resource('photos', 'PhotoController');
+
+
+// Route::resource('/tags/store', 'TagController');
+Route::post('/tags/store/{name}', 'TagController@store');
+Route::get('/tags/store/{name}', 'TagController@store');
+
+// Route::get('/products/{product}/edit', 'TagController@update');
+

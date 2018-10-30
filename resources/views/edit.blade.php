@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css" rel="stylesheet">
-    <script  data-src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
   </head>
   <body>
@@ -145,30 +144,15 @@
         <div class="col">
             <div class="row">
               <a href="/products" class="btn btn-primary-outline btn-sm">PRODUCTS</a>
-              <!-- <div class="col-xs-4 input">
-                <input type="text" class="form-control" placeholder="Product name" name="name" value="{{$product->name}}">
-              </div>
-              <div class="col offset-md-1">
-                <span class="label label-primary-image">IMAGES</span>
-              </div> -->
             </div>
 
             <div class="row">
               <button type="button" class="btn btn-primary-outline btn-sm">ORDERS</button>
-              <!-- <div class="col offset-md-5" style="padding-left:0px;padding-right:0px">
-                <img src="{{asset("storage/categories/$product->photo")}}" alt="photo" height="50" width="100">
-              </div>
-              <form action="" method="post" enctype="multipart/form-data">
-                <input type="file" name="image">
-              </form> -->
             </div>
 
 
             <div class="row">
               <button type="button" class="btn btn-primary-outline btn-sm">CUSTOMERS</button>
-              <!-- <div class="col-xs-4 inputSub">
-                <input type="text" class="form-control" placeholder="Product subname" name="subname" value="{{$product->subname}}">
-              </div> -->
             </div>
 
             <div class="row">
@@ -177,76 +161,27 @@
 
             <div class="row">
               <button type="button" class="btn btn-primary-outline btn-sm">DISCOUNTS</button>
-              <!-- <div class="col-xs-4 input">
-                <input type="text" class="form-control" placeholder="Price" name="price" value="{{$product->price}}">
-              </div>
-              <div class="col" style="padding-left:70px; padding-right:30px;">
-                <input type="text" class="form-control" placeholder="Tag" name="tag" value="{{$product->tag}}">
-              </div>
-              <div class="col" style="padding-right: 180px;">
-                <button type="button" class="btn btn-primary">ADD</button>
-              </div> -->
             </div>
 
             <div class="row">
               <button type="button" class="btn btn-primary-outline btn-sm">APPS</button>
-              <!-- <div class="col" style="padding-left: 500px;padding-top:5px;padding-right:0px;">
-                <button type="button" class="btn btn-primary btn-xs" style="font-size:10px">PREMIUM</button>
-              </div>
-              <div class="col" style="padding-right: 0px;padding-top:5px;">
-                <button type="button" class="btn btn-primary btn-xs" style="font-size:10px">GOLD</button>
-              </div>
-              <div class="col" style="padding-right: 400px;padding-top:5px;">
-                <button type="button" class="btn btn-primary btn-xs" style="font-size:10px">BLACK</button>
-              </div> -->
             </div>
           </div>
 
             <div class="col colInputs">
               <div class="row" style="padding-left: 15px;">
                 <input type="text" class="form-control" placeholder="Product name" name="name" value="{{$product->name}}" style="width: 270px; ">
-              <!-- <div class="col offset-md-2">
-                <span class="label label-primary-image">IMAGES</span>
-              </div> -->
             </div>
-
-              <!-- <div class="row">
-                <div class="col offset-md-5" style="padding-left:0px;padding-right:0px">
-                  <img src="{{asset("storage/categories/$product->photo")}}" alt="photo" height="90" width="100">
-                </div>
-                <form action="" method="post" enctype="multipart/form-data">
-                  <input type="file" name="image">
-                </form>
-              </div> -->
 
               <div class="row" style="padding-top: 30px; padding-left:15px;">
                   <input type="text" class="form-control" placeholder="Product subname" name="subname" value="{{$product->subname}}" style="width: 270px">
               </div>
 
 
-
               <div class="row" style="padding-top: 30px;padding-left:15px;">
-                  <input type="text" class="form-control" placeholder="Price" name="price" value="{{$product->price}}" style="width: 270px;">
-
-                <!-- <div class="col" style="padding-left:70px; padding-right:30px;">
-                  <input type="text" class="form-control" placeholder="Tag" name="tag" value="{{$product->tag}}">
-                </div>
-                <div class="col" style="padding-right: 180px;">
-                  <button type="button" class="btn btn-primary">ADD</button>
-                </div> -->
+                  <input type="number" class="form-control" placeholder="Price" name="price" value="{{$product->price}}" style="width: 270px;">
               </div>
 
-              <!-- <div class="row">
-                <div class="col" style="padding-left: 500px;padding-top:5px;padding-right:0px;">
-                  <button type="button" class="btn btn-primary btn-xs" style="font-size:10px">PREMIUM</button>
-                </div>
-                <div class="col" style="padding-right: 0px;padding-top:5px;">
-                  <button type="button" class="btn btn-primary btn-xs" style="font-size:10px">GOLD</button>
-                </div>
-                <div class="col" style="padding-right: 30px;padding-top:5px;">
-                  <button type="button" class="btn btn-primary btn-xs" style="font-size:10px">BLACK</button>
-                </div>
-              </div> -->
 
               <div class="row" style="padding-top: 40px; padding-right: 20px;">
                 <div class="col">
@@ -264,24 +199,29 @@
                 <img src="{{asset("storage/categories/$product->photo")}}" alt="photo" height="200" width="200">
               </div>
               <div class="row" style="padding-top:20px">
-                  <input type="text" class="form-control" placeholder="Tag" name="tag" value="{{$product->tag}}" style="width:200px">
+                  <input type="text" class="form-control" placeholder="Tag" name="tag"  id="tag" style="width:200px">
+                  <div class="row" style="padding-top:10px;">
+                    <div id="lugarDasTags">
+                      
+                    </div>
+                    
+                    <div id="lugarDosInputsDasTags">
+
+                    </div>
+                  </div>
 
               </div>
-              <div class="row">
-                <button type="button" class="btn btn-primary btn-xs" style="font-size:10px">PREMIUM</button>
 
-                  <button type="button" class="btn btn-primary btn-xs" style="font-size:10px; margin-left:25px">GOLD</button>
-
-
-                  <button type="button" class="btn btn-primary btn-xs" style="font-size:10px;margin-left:25px">BLACK</button>
-              </div>
             </div>
 
             <div class="col" style="padding-right:50px;">
               <form action="" method="post" enctype="multipart/form-data">
                 <input type="file" name="image">
               </form>
-              <button type="button" class="btn btn-primary" style="margin-top: 215px;">ADD</button>
+
+              
+              <a  onclick="inserirTag()" class="btn btn-primary" style="margin-top:212px">ADD</a>
+
             </div>
 
         </div>
@@ -293,6 +233,29 @@
       </div>
     </form>
    </div>
+
+
+   
+
+   <script>
+     function inserirTag(){
+      //  pegar o que ta escrito no campo
+      var tagNoInput = $("#tag").val();
+      
+      // soltar um alert com o que escrito
+      //alert(tagNoInput);
+
+      
+      //toda vez que o botão foi clicado, ele tem que inserir uma tag no lugarDasTags
+      $("#lugarDasTags").append("<div class='col';'><button type='button' class='btn btn-primary btn-xs' style='font-size:10px'>"+tagNoInput+"</button></div>");
+      $("#lugarDosInputsDasTags").append("<input type='hidden' name='tags[]' value='"+tagNoInput+"'>");
+
+
+      // limpar o campo
+      $("#tag").val("");
+     }
+    
+   </script>
 
   </body>
 </html>

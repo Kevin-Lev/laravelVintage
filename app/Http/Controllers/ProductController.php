@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Product;
+use App\Tags;
 
 class ProductController extends Controller
 {
@@ -41,8 +42,19 @@ class ProductController extends Controller
         $product->subname = $request->get('subname');
         $product->price = $request->get('price');
         $product->description = $request->get('description');
-        $product->tag = $request->get('tag');
+        // $product->tag = $request->get('tag');
         $product->save();
+        
+        
+
+        foreach ($request->get("tags") as  $tagForm) {
+            $tag = new Tags();
+            $tag->name = $tagForm;
+            $tag->product_id = $product->id;
+            $tag->save();
+        }
+
+
 
             // Define o valor default para a variável que contém o nome da imagem
         $nameFile = null;
@@ -90,7 +102,9 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        //
+        $tags = DB::table('tags')->where('product_id', $product->id);
+
+        return $tags;
     }
 
     /**
@@ -120,8 +134,14 @@ class ProductController extends Controller
       $product->price = $request->get('price');
       $product->description = $request->get('description');
       $product->tag = $request->get('tag');
-      //$upload = $request->image->storeAs('categories', $id."-".$product->name.".jpeg");
       $product->save();
+
+      foreach ($request->get("tags") as  $tagForm) {
+            $tag = new Tags();
+            $tag->name = $tagForm;
+            $tag->product_id = $product->id;
+            $tag->save();
+        }
 
       // Define o valor default para a variável que contém o nome da imagem
       $nameFile = null;
@@ -156,10 +176,9 @@ class ProductController extends Controller
 
         }
 
-
-
       return redirect('products');
     }
+
 
     /**
      * Remove the specified resource from storage.
