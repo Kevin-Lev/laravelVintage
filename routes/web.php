@@ -29,3 +29,7 @@ Route::get('/tags/store/{name}', 'TagController@store');
 
 // Route::get('/products/{product}/edit', 'TagController@update');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

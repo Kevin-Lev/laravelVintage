@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Edit Products</title>
+    <title>Index - Products</title>
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css" rel="stylesheet">
@@ -12,6 +12,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
   </head>
   <body>
+
+    
 
     <style>
       .table{
@@ -92,7 +94,13 @@
           <img src="/images/personIcon.png">
         </div>
         <div class="col-md-2">
-          <button type="button" class="btn-primary-outline btn-sm">SIGN OUT</button>
+          {{-- <form action="/login" method="post">
+            <button type="submit" class="btn-primary-outline btn-sm">SIGN OUT</button>
+          </form> --}}
+          <form id="logout-form" action="{{ route('logout') }}" method="POST">
+              @csrf
+              <button type="submit" class="btn-primary-outline btn-sm">SIGN OUT</button>
+          </form>
         </div>
       </div>
 

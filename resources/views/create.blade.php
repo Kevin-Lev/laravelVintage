@@ -101,11 +101,7 @@
 
 
     <div class="container">
-      <form method="post" action="{{url('products')}}" enctype="multipart/form-data">
-        @csrf
-
-        
-
+    
         <div class="row row-vintage">
           <div class="col-md-8 vimage">
             <img src="/images/vintage.png">
@@ -114,7 +110,10 @@
             <img src="/images/personIcon.png">
           </div>
           <div class="col-md-2">
-            <button type="button" class="btn-primary-outline btn-sm">SIGN OUT</button>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST">
+              @csrf
+              <button type="submit" class="btn-primary-outline btn-sm">SIGN OUT</button>
+          </form>
           </div>
         </div>
 
@@ -137,85 +136,86 @@
           </div>
         </div>
 
-
-      <div class="row align-items-center table-buffer">
-        <div class="col-md-12">
-            <div class="row">
-              <a href="/products" class="btn btn-primary-outline btn-sm">PRODUCTS</a>
-              <div class="col-xs-4 input">
-                <input type="text" class="form-control" placeholder="Product name" name="name" id="proname">
-              </div>
-              <div class="col offset-md-1">
-                <span class="label label-primary-image">IMAGES</span>
-              </div>
-            </div>
-
-            <div class="row">
-              <button type="button" class="btn btn-primary-outline btn-sm">ORDERS</button>
-              <div class="col offset-md-5" style="padding-left:0px;padding-right:0px">
-                <form action="" method="post" enctype="multipart/form-data">
-                  <input type="file" name="image">
-                </form>
-              </div>
-
-
-            </div>
-
-
-      
-            <div class="row">
-              <button type="button" class="btn btn-primary-outline btn-sm">CUSTOMERS</button>
-              <div class="col-xs-4 inputSub">
-                <input type="text" class="form-control" placeholder="Product subname" name="subname" id="prosub">
-              </div>
-            </div>
-
-            <div class="row">
-              <button type="button" class="btn btn-primary-outline btn-sm">ANALYTICS</button>
-            </div>
-
-            <div class="row">
-              <button type="button" class="btn btn-primary-outline btn-sm">DISCOUNTS</button>
-              <div class="col-xs-4 input">
-                <input type="number" class="form-control" placeholder="Price" name="price" id="proprice">
-              </div>
-              <div class="col-xs-3" style="padding-left:70px; padding-right:0px;">
-                <input type="text" class="form-control" placeholder="Tag" name="tag" id="tag">
-              </div>
-
-                {{-- <button type="button"  class="btn btn-primary">ADD</button> --}}
-                <div class="col">
-                  <a  onclick="inserirTag()" class="btn btn-primary">ADD</a>
+        <form method="post" action="{{url('products')}}" enctype="multipart/form-data">
+          @csrf
+          <div class="row align-items-center table-buffer">
+            <div class="col-md-12">
+                <div class="row">
+                  <a href="/products" class="btn btn-primary-outline btn-sm">PRODUCTS</a>
+                  <div class="col-xs-4 input">
+                    <input type="text" class="form-control" placeholder="Product name" name="name" id="proname">
+                  </div>
+                  <div class="col offset-md-1">
+                    <span class="label label-primary-image">IMAGES</span>
+                  </div>
                 </div>
 
-              {{-- href="{{ url('/tags/store/fff') }}" --}}
+                <div class="row">
+                  <button type="button" class="btn btn-primary-outline btn-sm">ORDERS</button>
+                  <div class="col offset-md-5" style="padding-left:0px;padding-right:0px">
+                    <form action="" method="post" enctype="multipart/form-data">
+                      <input type="file" name="image">
+                    </form>
+                  </div>
 
+
+                </div>
+
+
+          
+                <div class="row">
+                  <button type="button" class="btn btn-primary-outline btn-sm">CUSTOMERS</button>
+                  <div class="col-xs-4 inputSub">
+                    <input type="text" class="form-control" placeholder="Product subname" name="subname" id="prosub">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <button type="button" class="btn btn-primary-outline btn-sm">ANALYTICS</button>
+                </div>
+
+                <div class="row">
+                  <button type="button" class="btn btn-primary-outline btn-sm">DISCOUNTS</button>
+                  <div class="col-xs-4 input">
+                    <input type="number" class="form-control" placeholder="Price" name="price" id="proprice">
+                  </div>
+                  <div class="col-xs-3" style="padding-left:70px; padding-right:0px;">
+                    <input type="text" class="form-control" placeholder="Tag" name="tag" id="tag">
+                  </div>
+
+                    {{-- <button type="button"  class="btn btn-primary">ADD</button> --}}
+                    <div class="col">
+                      <a  onclick="inserirTag()" class="btn btn-primary">ADD</a>
+                    </div>
+
+                  {{-- href="{{ url('/tags/store/fff') }}" --}}
+
+                </div>
+
+                <div class="row">
+                  <button type="button" class="btn btn-primary-outline btn-sm">APPS</button>
+                  <div class="col offset-md-5" id="lugarDasTags">
+                  
+                  </div>
+
+                  <div id="lugarDosInputsDasTags">
+
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-6 offset-md-2">
+                    <textarea class="form-control inputDesc2" placeholder="Description" name="description"></textarea>
+                  </div>
+                </div>
             </div>
+          </div>
 
-            <div class="row">
-              <button type="button" class="btn btn-primary-outline btn-sm">APPS</button>
-              <div class="col offset-md-5" id="lugarDasTags">
-              
-              </div>
-
-              <div id="lugarDosInputsDasTags">
-
-              </div>
+          <div class="row row-label">
+            <div class="col-md-12">
+              <span class="label label-primary-outline">2018 Vintage - All rights reserved.</span>
             </div>
-
-            <div class="row">
-              <div class="col-xs-6 offset-md-2">
-                <textarea class="form-control inputDesc2" placeholder="Description" name="description"></textarea>
-              </div>
-            </div>
-        </div>
-      </div>
-
-      <div class="row row-label">
-        <div class="col-md-12">
-          <span class="label label-primary-outline">2018 Vintage - All rights reserved.</span>
-        </div>
-      </div>
+          </div>
     </form>
    </div>
 
