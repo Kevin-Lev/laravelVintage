@@ -199,7 +199,7 @@
                     <span class="label label-primary-image">IMAGE</span>
                   </div>
                   <div class="row">
-                    <img src="{{asset("storage/categories/$product->photo")}}" alt="photo" height="200" width="200">
+                    <img src="{{asset("storage/categories/$photo->name")}}" alt="{{$photo->name}}" height="200" width="200">
                   </div>
                   <div class="row" style="padding-top:20px">
                       <input type="text" class="form-control" placeholder="Tag" name="tag"  id="tag" style="width:200px">

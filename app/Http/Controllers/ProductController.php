@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Product;
 use App\Tags;
+use App\Photo;
+use DB;
 
 class ProductController extends Controller
 {
@@ -54,41 +56,64 @@ class ProductController extends Controller
             $tag->save();
         }
 
+         if($request->hasFile('image')){
+            $request->image->extension();
+
+            $request->image->storeAs('categories', $product->id.'-'.$product->name.$request->image->extension());
+        
+            $photo = new Photo();
+            $photo->name = $product->id.'-'.$product->name.$request->image->extension();
+            $photo->product_id = $product->id;
+            $photo->save();
+        }
+
 
 
             // Define o valor default para a variável que contém o nome da imagem
-        $nameFile = null;
+        //$nameFile = null;
+
+        // if($request->hasFile('image') && $request->file('image')->isValid()){
+        //     foreach($request->file('image') as $image){
+        //         $nameFile = $product->id.$product->name.$image;
+        //         $upload = $request->image->storeAs('categories', $nameFile);
+               
+        //         $photo = new Photo();
+        //         $photo->name = $nameFile;
+        //         $photo->product_id = $product->id;
+        //         $photo->save();
+        //     }
+        // }
 
         // Verifica se informou o arquivo e se é válido
-        if ($request->hasFile('image') && $request->file('image')->isValid()) {
-            //
-            // // Define um aleatório para o arquivo baseado no timestamps atual
-            // #$name = uniqid(date('HisYmd');
-            // $name = ;
-            //
-            // // Recupera a extensão do arquivo
-            // $extension =
+        // if ($request->hasFile('image') && $request->file('image')->isValid()) {
+        //     //
+        //     // // Define um aleatório para o arquivo baseado no timestamps atual
+        //     // #$name = uniqid(date('HisYmd');
+        //     // $name = ;
+        //     //
+        //     // // Recupera a extensão do arquivo
+        //     // $extension =
 
-            // Define finalmente o nome
-            $nameFile = $product->id.$product->name.$request->image->extension();
+        //     // Define finalmente o nome
+        //     $nameFile = $product->id.$product->name.$request->image->extension();
 
-            // Faz o upload:
-            $upload = $request->image->storeAs('categories', $nameFile);
-            // Se tiver funcionado o arquivo foi armazenado em storage/app/public/categories/nomedinamicoarquivo.extensao
+        //     // Faz o upload:
+        //     $upload = $request->image->storeAs('categories', $nameFile);
+        //     // Se tiver funcionado o arquivo foi armazenado em storage/app/public/categories/nomedinamicoarquivo.extensao
 
-            // Verifica se NÃO deu certo o upload (Redireciona de volta)
-            if ( !$upload ){
-                return redirect()
-                            ->back()
-                            ->with('error', 'Falha ao fazer upload')
-                            ->withInput();
-            }
+        //     // Verifica se NÃO deu certo o upload (Redireciona de volta)
+        //     if ( !$upload ){
+        //         return redirect()
+        //                     ->back()
+        //                     ->with('error', 'Falha ao fazer upload')
+        //                     ->withInput();
+        //     }
 
 
-            $product->photo = $nameFile;
-            $product->save();
+        //     $product->photo = $nameFile;
+        //     $product->save();
 
-          }
+        //   }
 
 
         return redirect('products')->with('success', 'Information has been added');
@@ -116,7 +141,8 @@ class ProductController extends Controller
     public function edit($id)
     {
         $product = Product::find($id);
-        return view('edit', compact('product', 'id'));
+        $photo = DB::table('photos')->where('product_id', $id)->first();
+        return view('edit', compact('product', 'id'), compact('photo', $photo->id));
     }
 
     /**
@@ -141,6 +167,20 @@ class ProductController extends Controller
             $tag->name = $tagForm;
             $tag->product_id = $product->id;
             $tag->save();
+        }
+
+    //   $photo = DB::table('photos')->where('product_id', $id)->first();
+    //   echo $photo->name;  
+
+      if($request->hasFile('image')){
+            $request->image->extension();
+
+            $request->image->storeAs('categories', $product->id.'-'.$product->name.$request->image->extension());
+        
+            $newphoto = new Photo();
+            $newphoto->name = $product->id.'-'.$product->name.$request->image->extension();
+            $newphoto->product_id = $product->id;
+            $newphoto->save();
         }
 
       // Define o valor default para a variável que contém o nome da imagem

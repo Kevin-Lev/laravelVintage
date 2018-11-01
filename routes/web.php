@@ -29,6 +29,7 @@ Route::get('/tags/store/{name}', 'TagController@store');
 
 // Route::get('/products/{product}/edit', 'TagController@update');
 
+Route::get('/storeupload', 'PhotoController@store');
 
 Auth::routes();
 

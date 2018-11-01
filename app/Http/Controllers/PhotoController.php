@@ -35,11 +35,17 @@ class PhotoController extends Controller
      */
     public function store(Request $request)
     {
-        $photo = new Photo();
-        $photo->name = $request->get('name');
-        $photo->product_id = $request->get('product_id');
+        // if($request->hasFile('image')){
+        //     $request->image->extension();
 
-        $photo->save(); 
+        //     $request->image->storeAs('categories', 'ibage'.$request->image->extension());
+        
+        //     $photo = new Photo();
+        //     $photo->name = 'ibage'.$request->image->extension();
+        //     $photo->product_id = 1;
+        //     $photo->save();
+        // }
+        
     }
 
     /**

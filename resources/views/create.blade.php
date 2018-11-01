@@ -118,26 +118,27 @@
         </div>
 
 
-        <div class="row top-buffer">
-          <div class="col-md-2">
-            <button type="button" class="btn-primary-menu">MENU</button>
-          </div>
-          <div class="col-md-1">
-            <td><button type="submit" class="btn btn-success btn-md">SAVE</button>
-          </div>
-          <div class="col-md-1">
-            <a href="/products" class="btn btn-primary btn-md">CANCEL</a>
-          </div>
-          <div class="col-md-2">
-            <td><button type="button" class="btn btn-danger btn-md" disabled>DELETE</button>
-          </div>
-          <div class="col-md-1">
-            <td><button type="button" class="btn btn-primary btn-md">PREVIEW</button>
-          </div>
-        </div>
-
         <form method="post" action="{{url('products')}}" enctype="multipart/form-data">
           @csrf
+          <div class="row top-buffer">
+            <div class="col-md-2">
+              <button type="button" class="btn-primary-menu">MENU</button>
+            </div>
+            <div class="col-md-1">
+              <td><button type="submit" class="btn btn-success btn-md">SAVE</button>
+            </div>
+            <div class="col-md-1">
+              <a href="/products" class="btn btn-primary btn-md">CANCEL</a>
+            </div>
+            <div class="col-md-2">
+              <td><button type="button" class="btn btn-danger btn-md" disabled>DELETE</button>
+            </div>
+            <div class="col-md-1">
+              <td><button type="button" class="btn btn-primary btn-md">PREVIEW</button>
+            </div>
+          </div>
+
+        
           <div class="row align-items-center table-buffer">
             <div class="col-md-12">
                 <div class="row">
@@ -153,9 +154,8 @@
                 <div class="row">
                   <button type="button" class="btn btn-primary-outline btn-sm">ORDERS</button>
                   <div class="col offset-md-5" style="padding-left:0px;padding-right:0px">
-                    <form action="" method="post" enctype="multipart/form-data">
                       <input type="file" name="image">
-                    </form>
+                    
                   </div>
 
 
