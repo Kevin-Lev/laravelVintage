@@ -154,7 +154,7 @@
                 <div class="row">
                   <button type="button" class="btn btn-primary-outline btn-sm">ORDERS</button>
                   <div class="col offset-md-5" style="padding-left:0px;padding-right:0px">
-                      <input type="file" name="image">
+                      <input type="file" name="image[]" multiple>
                     
                   </div>
 

@@ -123,6 +123,9 @@
         </div>
 
 
+      <form method="POST" action="{{action('ProductController@update', $id)}}" enctype="multipart/form-data">
+          {{ csrf_field() }}
+          {{ method_field('PUT') }}
         <div class="row top-buffer">
           <div class="col-md-2">
             <button type="button" class="btn-primary-menu">MENU</button>
@@ -141,8 +144,7 @@
           </div>
         </div>
 
-        <form method="post" action="{{action('ProductController@update', $id)}}">
-          @csrf
+        
           <div class="row table-buffer">
             <div class="col">
                 <div class="row">
@@ -199,9 +201,14 @@
                     <span class="label label-primary-image">IMAGE</span>
                   </div>
                   <div class="row">
-                    <img src="{{asset("storage/categories/$photo->name")}}" alt="{{$photo->name}}" height="200" width="200">
-                  </div>
-                  <div class="row" style="padding-top:20px">
+                    {{-- <img src="{{asset("storage/categories/$photo->name")}}" alt="{{$photo->name}}" height="120" width="120"> --}}
+                    
+                      @foreach ($photo as $pho)
+                        <img src="{{asset("storage/categories/$pho->name")}}" alt="{{$pho->name}}" height="80" width="80">
+                      @endforeach
+                    
+                   </div>
+                   <div class="row" style="padding-top:20px">
                       <input type="text" class="form-control" placeholder="Tag" name="tag"  id="tag" style="width:200px">
                       <div class="row" style="padding-top:10px;">
                         <div id="lugarDasTags">
@@ -212,19 +219,13 @@
 
                         </div>
                       </div>
-
                   </div>
 
                 </div>
 
                 <div class="col" style="padding-right:50px;">
-                  <form action="" method="post" enctype="multipart/form-data">
-                    <input type="file" name="image">
-                  </form>
-
-                  
-                  <a  onclick="inserirTag()" class="btn btn-primary" style="margin-top:212px">ADD</a>
-
+                    <input type="file" name="image[]" multiple> 
+                    <a  onclick="inserirTag()" class="btn btn-primary" style="margin-top:212px">ADD</a>
                 </div>
 
             </div>
@@ -234,7 +235,7 @@
               <span class="label label-primary-outline">2018 Vintage - All rights reserved.</span>
             </div>
           </div>
-    </form>
+      </form>
    </div>
 
 

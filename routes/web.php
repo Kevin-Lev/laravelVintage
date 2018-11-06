@@ -20,6 +20,8 @@ Route::get('/testebootstrap', function () {
 });
 
 Route::resource('products','ProductController');
+// Route::get('/proUpdate', 'ProductController@update');
+// Route::post('/proUpdate', 'ProductController@update');
 // Route::resource('photos', 'PhotoController');
 
 
@@ -29,7 +31,6 @@ Route::get('/tags/store/{name}', 'TagController@store');
 
 // Route::get('/products/{product}/edit', 'TagController@update');
 
-Route::get('/storeupload', 'PhotoController@store');
 
 Auth::routes();
 
