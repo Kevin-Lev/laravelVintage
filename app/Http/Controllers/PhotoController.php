@@ -35,16 +35,7 @@ class PhotoController extends Controller
      */
     public function store(Request $request)
     {
-        // if($request->hasFile('image')){
-        //     $request->image->extension();
-
-        //     $request->image->storeAs('categories', 'ibage'.$request->image->extension());
-        
-        //     $photo = new Photo();
-        //     $photo->name = 'ibage'.$request->image->extension();
-        //     $photo->product_id = 1;
-        //     $photo->save();
-        // }
+        // 
         
     }
 
@@ -88,8 +79,11 @@ class PhotoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($product_id, $id)
     {
-        //
+        $photo = Photo::find($id);
+        $photo->delete();
+
+        return redirect('products/'.$product_id.'/edit');
     }
 }

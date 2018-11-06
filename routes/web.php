@@ -20,16 +20,13 @@ Route::get('/testebootstrap', function () {
 });
 
 Route::resource('products','ProductController');
-// Route::get('/proUpdate', 'ProductController@update');
-// Route::post('/proUpdate', 'ProductController@update');
-// Route::resource('photos', 'PhotoController');
 
 
-// Route::resource('/tags/store', 'TagController');
 Route::post('/tags/store/{name}', 'TagController@store');
 Route::get('/tags/store/{name}', 'TagController@store');
 
-// Route::get('/products/{product}/edit', 'TagController@update');
+Route::post('/photoStore/{product_id}/{id}', 'PhotoController@destroy');
+Route::get('/photoStore/{product_id}/{id}', 'PhotoController@destroy');
 
 
 Auth::routes();

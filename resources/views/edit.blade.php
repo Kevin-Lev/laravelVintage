@@ -205,6 +205,7 @@
                     
                       @foreach ($photo as $pho)
                         <img src="{{asset("storage/categories/$pho->name")}}" alt="{{$pho->name}}" height="80" width="80">
+                        <a href="{{ url('/photoStore/'.$pho->product_id.'/'.$pho->id)}}"><span class="glyphicon glyphicon-trash"></span></a>
                       @endforeach
                     
                    </div>

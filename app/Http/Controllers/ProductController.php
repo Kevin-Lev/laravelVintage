@@ -74,54 +74,6 @@ class ProductController extends Controller
         }
 
 
-
-            // Define o valor default para a variável que contém o nome da imagem
-        //$nameFile = null;
-
-        // if($request->hasFile('image') && $request->file('image')->isValid()){
-        //     foreach($request->file('image') as $image){
-        //         $nameFile = $product->id.$product->name.$image;
-        //         $upload = $request->image->storeAs('categories', $nameFile);
-               
-        //         $photo = new Photo();
-        //         $photo->name = $nameFile;
-        //         $photo->product_id = $product->id;
-        //         $photo->save();
-        //     }
-        // }
-
-        // Verifica se informou o arquivo e se é válido
-        // if ($request->hasFile('image') && $request->file('image')->isValid()) {
-        //     //
-        //     // // Define um aleatório para o arquivo baseado no timestamps atual
-        //     // #$name = uniqid(date('HisYmd');
-        //     // $name = ;
-        //     //
-        //     // // Recupera a extensão do arquivo
-        //     // $extension =
-
-        //     // Define finalmente o nome
-        //     $nameFile = $product->id.$product->name.$request->image->extension();
-
-        //     // Faz o upload:
-        //     $upload = $request->image->storeAs('categories', $nameFile);
-        //     // Se tiver funcionado o arquivo foi armazenado em storage/app/public/categories/nomedinamicoarquivo.extensao
-
-        //     // Verifica se NÃO deu certo o upload (Redireciona de volta)
-        //     if ( !$upload ){
-        //         return redirect()
-        //                     ->back()
-        //                     ->with('error', 'Falha ao fazer upload')
-        //                     ->withInput();
-        //     }
-
-
-        //     $product->photo = $nameFile;
-        //     $product->save();
-
-        //   }
-
-
         return redirect('products')->with('success', 'Information has been added');
     }
 
@@ -174,32 +126,6 @@ class ProductController extends Controller
         DB::table('tags')->where('product_id', '=', $id)->delete();
 
 
-        foreach ($request->get("tags") as  $tagForm) {
-            $tag = new Tags();
-            $tag->name = $tagForm;
-            $tag->product_id = $product->id;
-            $tag->save();
-            
-        }
-
-        $images = $request->file('image');   
-
-        if($request->hasFile('image')){
-             $cont = count($photos);
-            
-             foreach($images as $image){
-                // $request->image->extension();
-                $cont++;
-                
-                $image->storeAs('categories', $id.'-'.$product->name.'-img'.$cont.\File::extension($image));
-            
-                $photo = new Photo();
-                $photo->name = $id.'-'.$product->name.'-img'.$cont.\File::extension($image);
-                $photo->product_id = $id;
-                $photo->save();
-             }
-        }
-
         foreach($tags as $tag){
             $newTag = new Tags();
             $newTag->id = $tag->id;
@@ -219,52 +145,38 @@ class ProductController extends Controller
             $newPhoto->save();
         }
 
-    //   $photo = DB::table('photos')->where('product_id', $id)->first();
-    //   echo $photo->name;  
+        if($request->get("tags") != null){
+            foreach ($request->get("tags") as  $tagForm) {
+                $tag = new Tags();
+                $tag->name = $tagForm;
+                $tag->product_id = $product->id;
+                $tag->save();
+                
+            }
+        }
 
-    //   if($request->hasFile('image')){
-    //         $request->image->extension();
+        $images = $request->file('image');   
 
-    //         $request->image->storeAs('categories', $product->id.'-'.$product->name.$request->image->extension());
-        
-    //         $newphoto = new Photo();
-    //         $newphoto->name = $product->id.'-'.$product->name.$request->image->extension();
-    //         $newphoto->product_id = $product->id;
-    //         $newphoto->save();
-    //     }
+        if($request->hasFile('image')){
+             $cont = count($photos);
+            
+             foreach($images as $image){
+                // $request->image->extension();
+                $cont++;
+                
+                while(count(DB::table('photos')->where('name', $id.'-'.$product->name.'-img'.$cont.\File::extension($image))->get()) != 0){
+                    $cont++;
+                }
 
-    //   // Define o valor default para a variável que contém o nome da imagem
-    //   $nameFile = null;
+                $image->storeAs('categories', $id.'-'.$product->name.'-img'.$cont.\File::extension($image));
+            
+                $photo = new Photo();
+                $photo->name = $id.'-'.$product->name.'-img'.$cont.\File::extension($image);
+                $photo->product_id = $id;
+                $photo->save();
+             }
+        }
 
-    //   // Verifica se informou o arquivo e se é válido
-    //   if ($request->hasFile('image') && $request->file('image')->isValid()) {
-    //       //
-    //       // // Define um aleatório para o arquivo baseado no timestamps atual
-    //       // #$name = uniqid(date('HisYmd');
-    //       // $name = ;
-    //       //
-    //       // // Recupera a extensão do arquivo
-    //       // $extension =
-
-    //       // Define finalmente o nome
-    //       $nameFile = $product->id.$product->name.$request->image->extension();
-
-    //       // Faz o upload:
-    //       $upload = $request->image->storeAs('categories', $nameFile);
-    //       // Se tiver funcionado o arquivo foi armazenado em storage/app/public/categories/nomedinamicoarquivo.extensao
-
-    //       // Verifica se NÃO deu certo o upload (Redireciona de volta)
-    //       if ( !$upload ){
-    //           return redirect()
-    //                       ->back()
-    //                       ->with('error', 'Falha ao fazer upload')
-    //                       ->withInput();
-    //       }
-
-    //       $product->photo = $nameFile;
-    //       $product->save();
-
-    //     }
 
       return redirect('products');
     }
