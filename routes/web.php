@@ -19,6 +19,10 @@ Route::get('/testebootstrap', function () {
     return view('index2');
 });
 
+Route::get('/preview/{product_id}', 'ProductController@preview');
+Route::post('/preview/{product_id}', 'ProductController@preview');
+
+
 Route::resource('products','ProductController');
 
 

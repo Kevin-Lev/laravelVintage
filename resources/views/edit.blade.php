@@ -178,7 +178,7 @@
             </form> --}}
           </div>
           <div class="col-md-1">
-            <td><button type="button" class="btn btn-primary btn-md">PREVIEW</button>
+              <a href="{{ url('/preview/'.$id)}}"><span class="btn btn-primary">PREVIEW</span></a>
           </div>
         </div>
 

@@ -102,6 +102,14 @@ class ProductController extends Controller
         return view('edit', compact('product', 'id'), ['photo' => $photo, 'tag' => $tag]);
     }
 
+    public function preview($id){
+        $product = Product::find($id);
+        $photo = DB::table('photos')->where('product_id', '=', $id)->get();
+        $tag = DB::table('tags')->where('product_id', '=', $id)->get();
+
+        return view('preview', compact('product', 'id'), ['photo' => $photo, 'tag' => $tag]);
+    }
+
     /**
      * Update the specified resource in storage.
      *
