@@ -1,5 +1,7 @@
 <!-- products.blade.php -->
 
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -12,6 +14,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
   </head>
   <body>
+
+    <script>
+
+      function inserirTag(){
+        //  pegar o que ta escrito no campo
+        var tagNoInput = $("#tag").val();
+        
+        // soltar um alert com o que escrito
+        //alert(tagNoInput);
+
+        
+        //toda vez que o botão foi clicado, ele tem que inserir uma tag no lugarDasTags
+        $("#lugarDasTags").append("<div class='col';'><button type='button' class='btn btn-primary btn-xs' style='font-size:10px'>"+tagNoInput+"</button></div>");
+        $("#lugarDosInputsDasTags").append("<input type='hidden' name='tags[]' value='"+tagNoInput+"'>").append("<div class='col';'><a href='' class='btn btn-danger btn-xs' style='font-size:9px'>X</a></div>");
+        
+
+
+        // limpar o campo
+        $("#tag").val("");
+      }
+
+  
+      function showTag(tag){
+        
+        var delTag = '/tagDelete/'.concat(tag.id);
+
+        $("#lugarDasTags").append("<div class='col';'><button type='button' class='btn btn-primary btn-xs' style='font-size:10px'>"+tag.name+"</button></div>");
+        $("#lugarDosInputsDasTags").append("<input type='hidden' name='tags[]' value='"+tag.name+"'>").append("<div class='col';'><a href='"+delTag+"' class='btn btn-danger btn-xs' style='font-size:9px'>X</a></div>");
+        
+      }
+
+    </script>
 
     <style>
       .container{
@@ -137,7 +171,11 @@
             <a href="/products" class="btn btn-primary btn-md">CANCEL</a>
           </div>
           <div class="col-md-2">
-            <td><button type="button" class="btn btn-danger btn-md">DELETE</button>
+            {{-- <form action="{{action('ProductController@destroy', $product['id'])}}" method="post">
+              @csrf
+              <input name="_method" type="hidden" value="DELETE">
+              <button class="btn btn-danger" type="submit">DELETE</button>
+            </form> --}}
           </div>
           <div class="col-md-1">
             <td><button type="button" class="btn btn-primary btn-md">PREVIEW</button>
@@ -224,6 +262,13 @@
 
                 </div>
 
+                @foreach ($tag as $t)
+                  <script>
+                    showTag({!! json_encode($t) !!});
+                  </script>
+                    
+                @endforeach
+
                 <div class="col" style="padding-right:50px;">
                     <input type="file" name="image[]" multiple> 
                     <a  onclick="inserirTag()" class="btn btn-primary" style="margin-top:212px">ADD</a>
@@ -238,29 +283,6 @@
           </div>
       </form>
    </div>
-
-
-   
-
-   <script>
-     function inserirTag(){
-      //  pegar o que ta escrito no campo
-      var tagNoInput = $("#tag").val();
-      
-      // soltar um alert com o que escrito
-      //alert(tagNoInput);
-
-      
-      //toda vez que o botão foi clicado, ele tem que inserir uma tag no lugarDasTags
-      $("#lugarDasTags").append("<div class='col';'><button type='button' class='btn btn-primary btn-xs' style='font-size:10px'>"+tagNoInput+"</button></div>");
-      $("#lugarDosInputsDasTags").append("<input type='hidden' name='tags[]' value='"+tagNoInput+"'>");
-
-
-      // limpar o campo
-      $("#tag").val("");
-     }
-    
-   </script>
 
   </body>
 </html>

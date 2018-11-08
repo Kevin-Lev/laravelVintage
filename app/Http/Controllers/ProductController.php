@@ -47,7 +47,6 @@ class ProductController extends Controller
         // $product->tag = $request->get('tag');
         $product->save();
         
-        
 
         foreach ($request->get("tags") as  $tagForm) {
             $tag = new Tags();
@@ -98,7 +97,9 @@ class ProductController extends Controller
     {
         $product = Product::find($id);
         $photo = DB::table('photos')->where('product_id', '=', $id)->get();
-        return view('edit', compact('product', 'id'), ['photo' => $photo]);
+        $tag = DB::table('tags')->where('product_id', '=', $id)->get();
+        
+        return view('edit', compact('product', 'id'), ['photo' => $photo, 'tag' => $tag]);
     }
 
     /**
@@ -127,13 +128,18 @@ class ProductController extends Controller
 
 
         foreach($tags as $tag){
-            $newTag = new Tags();
-            $newTag->id = $tag->id;
-            $newTag->name = $tag->name;
-            $newTag->created_at = $tag->created_at;
-            $newTag->product_id = $tag->product_id;
-            $newTag->updated_at = $tag->updated_at;
-            $newTag->save();
+            if(DB::table('tags')->where('id', '=', $tag->id)->get()){  //Se já estiver no BD, então não salva
+                continue;
+            }
+            else{
+                $newTag = new Tags();
+                $newTag->id = $tag->id;
+                $newTag->name = $tag->name;
+                $newTag->created_at = $tag->created_at;
+                $newTag->product_id = $tag->product_id;
+                $newTag->updated_at = $tag->updated_at;
+                $newTag->save();
+            }
         }
 
         foreach($photos as $photo){

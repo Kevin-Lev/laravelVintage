@@ -28,6 +28,8 @@ Route::get('/tags/store/{name}', 'TagController@store');
 Route::post('/photoStore/{product_id}/{id}', 'PhotoController@destroy');
 Route::get('/photoStore/{product_id}/{id}', 'PhotoController@destroy');
 
+Route::post('/tagDelete/{id}', 'TagController@destroy');
+Route::get('/tagDelete/{id}', 'TagController@destroy');
 
 Auth::routes();
 
