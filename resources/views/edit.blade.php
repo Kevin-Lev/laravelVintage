@@ -228,7 +228,7 @@
 
                   <div class="row" style="padding-top: 40px; padding-right: 20px;">
                     <div class="col">
-                      <textarea class="form-control " placeholder="Description" name="description" value="{{$product->description}}" style="height: 190px;width: 270px;"></textarea>
+                      <textarea class="form-control " placeholder="Description" name="description" style="height: 190px;width: 270px;">{{$product->description}}</textarea>
                     </div>
                   </div>
 
