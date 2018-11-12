@@ -4,16 +4,39 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Index - Products</title>
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
+    {{-- Pro Modal funcionar, precisa da biblioteca abaixo --}}
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
   </head>
   <body>
 
     
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Importar CSV</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <input type="file" name="csv"> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <style>
       .table{
@@ -113,7 +136,8 @@
           <a href="products/create" class="btn btn-primary btn-md">ADD PRODUCT</a>
         </div>
         <div class="col-md-3">
-          <td><button type="button" class="btn btn-primary btn-md">IMPORT PRODUCT</button>
+          {{-- <td><button type="button" class="btn btn-primary btn-md">IMPORT PRODUCT</button> --}}
+            <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#exampleModal">IMPORT PRODUCT</button>
         </div>
         <div class="col-xs-3">
           <input type="text" class="form-control" placeholder="Search..." id="search">
@@ -123,6 +147,7 @@
         </div>
       </div>
 
+      
 
     <div class="row table-buffer">
       <div class="col">

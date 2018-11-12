@@ -84,21 +84,21 @@
         </div>
 
         <div class="col-md-6">
-          <h2 style="color:black">{{$product->name}}</h2>
+          <h2 class="text-left" style="color:black">{{$product->name}}</h2>
 
           <div class="row">
-            <h1 class="center" style="color:black"><b>${{$product->price}}</b></h1>
+            <h1 class="text-left" style="color:black"><b>${{$product->price}}</b></h1>
           </div>
 
-          <div class="row" style="margin-top:30px;">
+          <div class="row" style="margin-top:20px;">
             <div class="col">
-              <h5 class="center"> <b>QUANTITY</b> </h5> 
+              <h5 class="text-left"> <b>QUANTITY</b> </h5> 
             </div>
           </div>
 
           <div class="row">
             <div class="col">
-              <img src="/images/quantIcon.png" style="margin-left:90px;">
+              <img src="/images/quantIcon.png" style="">
             </div>
           </div>
 
@@ -109,7 +109,7 @@
           </div>
 
           <div class="row" style="margin-top:10px;">
-            <div class="col-md-4" style="text-align:center">
+            <div class="col-md-4" style="text-align:left">
               @foreach ($tag as $t)
                 <button type='button' class='btn btn-primary btn-xs' style='font-size:14px; background-color:black'>{{$t->name}}</button>    
               @endforeach

@@ -110,6 +110,11 @@ class ProductController extends Controller
         return view('preview', compact('product', 'id'), ['photo' => $photo, 'tag' => $tag]);
     }
 
+    public function import(){
+        
+        return view('import');
+    }
+
     /**
      * Update the specified resource in storage.
      *

@@ -22,6 +22,8 @@ Route::get('/testebootstrap', function () {
 Route::get('/preview/{product_id}', 'ProductController@preview');
 Route::post('/preview/{product_id}', 'ProductController@preview');
 
+Route::get('/import', 'ProductController@import');
+Route::post('/import', 'ProductController@import');
 
 Route::resource('products','ProductController');
 
