@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Product;
 use App\Tags;
 use App\Photo;
+use Maatwebsite\Excel\Facades\Excel;
 use DB;
 
 class ProductController extends Controller
@@ -37,6 +38,7 @@ class ProductController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+    
     public function store(Request $request)
     {
         $product = new Product();
@@ -110,9 +112,28 @@ class ProductController extends Controller
         return view('preview', compact('product', 'id'), ['photo' => $photo, 'tag' => $tag]);
     }
 
-    public function import(){
+    public function import(Request $request){
         
-        return view('import');
+        $csv = $request->file('csv');
+
+        $file = fopen($csv, 'r');
+        $all_data = array();
+        $cont = 1;
+        while(($data = fgetcsv($file, 200000, ",")) !== FALSE){
+            
+
+            $product = new Product();
+            $product->name = $data[0];
+            $product->subname = $data[1];
+            $product->price = (int) $data[2];
+            $product->description = $data[3];
+
+            $product->save();
+            
+        }
+
+        return redirect('products');        
+        
     }
 
     /**

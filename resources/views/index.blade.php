@@ -17,26 +17,31 @@
   <body>
 
     
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title" id="exampleModalLabel">Importar CSV</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <input type="file" name="csv"> 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
+<form action="{{action('ProductController@import')}}" method="POST", enctype="multipart/form-data">
+  @csrf
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalCenterTitle">Import CSV</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                <input type="file" name="csv">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Import</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+  </form>
+    
 
     <style>
       .table{
@@ -137,7 +142,7 @@
         </div>
         <div class="col-md-3">
           {{-- <td><button type="button" class="btn btn-primary btn-md">IMPORT PRODUCT</button> --}}
-            <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#exampleModal">IMPORT PRODUCT</button>
+            <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#exampleModalCenter">IMPORT PRODUCT</button>
         </div>
         <div class="col-xs-3">
           <input type="text" class="form-control" placeholder="Search..." id="search">
