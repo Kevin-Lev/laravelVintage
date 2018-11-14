@@ -1,0 +1,16 @@
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1

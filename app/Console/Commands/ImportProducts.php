@@ -4,6 +4,8 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 
+use App\Product;
+
 class ImportProducts extends Command
 {
     /**
@@ -11,14 +13,14 @@ class ImportProducts extends Command
      *
      * @var string
      */
-    protected $signature = 'command:name';
+    protected $signature = 'import-products:csv';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Import CSV files to store its products in the database';
+    protected $description = 'Import products from a csv file';
 
     /**
      * Create a new command instance.
@@ -37,6 +39,23 @@ class ImportProducts extends Command
      */
     public function handle()
     {
-        //
+        
+        $file = fopen('storage/app/public/csv files/testeImport.csv', 'r');
+        $all_data = array();
+        $cont = 1;
+        while(($data = fgetcsv($file, 200000, ",")) !== FALSE){
+            
+
+            $product = new Product();
+            $product->name = $data[0];
+            $product->subname = $data[1];
+            $product->price = (int) $data[2];
+            $product->description = $data[3];
+
+            $product->save();
+            
+        }
+
+        $this->info('Your import was completed!');
     }
 }

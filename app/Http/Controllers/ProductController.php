@@ -112,25 +112,27 @@ class ProductController extends Controller
         return view('preview', compact('product', 'id'), ['photo' => $photo, 'tag' => $tag]);
     }
 
-    public function import(Request $request){
+    public function uploadCsv(Request $request){
         
         $csv = $request->file('csv');
 
-        $file = fopen($csv, 'r');
-        $all_data = array();
-        $cont = 1;
-        while(($data = fgetcsv($file, 200000, ",")) !== FALSE){
+        // $file = fopen($csv, 'r');
+        // $all_data = array();
+        // $cont = 1;
+        // while(($data = fgetcsv($file, 200000, ",")) !== FALSE){
             
 
-            $product = new Product();
-            $product->name = $data[0];
-            $product->subname = $data[1];
-            $product->price = (int) $data[2];
-            $product->description = $data[3];
+        //     $product = new Product();
+        //     $product->name = $data[0];
+        //     $product->subname = $data[1];
+        //     $product->price = (int) $data[2];
+        //     $product->description = $data[3];
 
-            $product->save();
+        //     $product->save();
             
-        }
+        // }
+
+        $csv->storeAs('csv files', $csv->getClientOriginalName());
 
         return redirect('products');        
         

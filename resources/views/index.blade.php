@@ -17,7 +17,7 @@
   <body>
 
     
-<form action="{{action('ProductController@import')}}" method="POST", enctype="multipart/form-data">
+<form action="{{action('ProductController@uploadCsv')}}" method="POST", enctype="multipart/form-data">
   @csrf
     <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
