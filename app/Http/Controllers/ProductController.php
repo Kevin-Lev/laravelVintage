@@ -46,7 +46,6 @@ class ProductController extends Controller
         $product->subname = $request->get('subname');
         $product->price = $request->get('price');
         $product->description = $request->get('description');
-        // $product->tag = $request->get('tag');
         $product->save();
         
 
