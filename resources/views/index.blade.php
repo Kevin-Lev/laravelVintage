@@ -49,14 +49,21 @@
         background-color: white;
         border: 1px solid;
         border-color: #F5F5F5;
-        padding-left: 20px;
-        width: 840px;
-        overflow: scroll;
+        /* padding-left: 20px; */
+        /* width: 840px; */
+        overflow-y: auto;
+        height: 250px;
+        /* width: 550px; */
+        display:block;
       }
-      .container{
-        position: relative;
-        top: 200px;
+      .container-fluid{
+        /* position: relative; */
+        margin-top: 120px;
+        /* margin-left: 100px; */
+        /* margin-right: 50px; */
       }
+
+
       .top-buffer{
         padding-top: 60px;
         background: #F5F5F5
@@ -112,8 +119,8 @@
       }
     </style>
 
-
-    <div class="container">
+  <div class="col-md-10 offset-md-1">
+    <div class="container-fluid">
       <div class="row row-vintage">
         <div class="col-md-8 vimage">
           <img src="/images/vintage.png">
@@ -155,7 +162,7 @@
       
 
     <div class="row table-buffer">
-      <div class="col">
+      <div class="col-md-2">
           <div class="row">
             <a href="/products" class="btn btn-primary-outline btn-sm">PRODUCTS</a>
           </div>
@@ -182,14 +189,14 @@
       </div>
 
 
-        <div class="col-md-10">
+        <div class="col-md-8">
           <table class="table">
             <thead>
               <tr>
-                <th class="text-center">Product Name</th>
-                <th class="text-center">Product Subname</th>
-                <th class="text-center">Price</th>
-                <th class="text-center">Actions</th>
+                <th class="text-center" style="width:300px;">Product Name</th>
+                <th class="text-center" style="width:300px;">Product Subname</th>
+                <th class="text-center" style="width:300px;">Price</th>
+                <th class="text-center" style="width:200px;">Actions</th>
               </tr>
             </thead>
             <tbody>
