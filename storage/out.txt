@@ -224,3 +224,2285 @@ Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/d
 Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
 Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
 Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '$this' (T_VARIABLE)
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:84
+    80| 
+    81|         $user = $auth()->user();
+    82|         Mail::to($request)
+    83| 
+  > 84|         $this->info('Your import was completed!');
+    85|     }
+    86| }
+    87|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '$this' (T_VARIABLE)
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:84
+    80| 
+    81|         $user = $auth()->user();
+    82|         Mail::to($request)
+    83| 
+  > 84|         $this->info('Your import was completed!');
+    85|     }
+    86| }
+    87|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '$this' (T_VARIABLE)
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:84
+    80| 
+    81|         $user = $auth()->user();
+    82|         Mail::to($request)
+    83| 
+  > 84|         $this->info('Your import was completed!');
+    85|     }
+    86| }
+    87|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '$this' (T_VARIABLE)
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:84
+    80| 
+    81|         $user = $auth()->user();
+    82|         Mail::to($request)
+    83| 
+  > 84|         $this->info('Your import was completed!');
+    85|     }
+    86| }
+    87|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '$this' (T_VARIABLE)
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:84
+    80| 
+    81|         $user = $auth()->user();
+    82|         Mail::to($request)
+    83| 
+  > 84|         $this->info('Your import was completed!');
+    85|     }
+    86| }
+    87|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '$this' (T_VARIABLE)
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:84
+    80| 
+    81|         $user = $auth()->user();
+    82|         Mail::to($request)
+    83| 
+  > 84|         $this->info('Your import was completed!');
+    85|     }
+    86| }
+    87|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '$this' (T_VARIABLE)
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:84
+    80| 
+    81|         $user = $auth()->user();
+    82|         Mail::to($request)
+    83| 
+  > 84|         $this->info('Your import was completed!');
+    85|     }
+    86| }
+    87|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '$this' (T_VARIABLE)
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:84
+    80| 
+    81|         $user = $auth()->user();
+    82|         Mail::to($request)
+    83| 
+  > 84|         $this->info('Your import was completed!');
+    85|     }
+    86| }
+    87|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '$this' (T_VARIABLE)
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:84
+    80| 
+    81|         $user = $auth()->user();
+    82|         Mail::to($request)
+    83| 
+  > 84|         $this->info('Your import was completed!');
+    85|     }
+    86| }
+    87|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '$this' (T_VARIABLE)
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:84
+    80| 
+    81|         $user = $auth()->user();
+    82|         Mail::to($request)
+    83| 
+  > 84|         $this->info('Your import was completed!');
+    85|     }
+    86| }
+    87|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '$this' (T_VARIABLE)
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:84
+    80| 
+    81|         $user = $auth()->user();
+    82|         Mail::to($request)
+    83| 
+  > 84|         $this->info('Your import was completed!');
+    85|     }
+    86| }
+    87|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '$this' (T_VARIABLE)
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:84
+    80| 
+    81|         $user = $auth()->user();
+    82|         Mail::to($request)
+    83| 
+  > 84|         $this->info('Your import was completed!');
+    85|     }
+    86| }
+    87|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '$this' (T_VARIABLE)
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:84
+    80| 
+    81|         $user = $auth()->user();
+    82|         Mail::to($request)
+    83| 
+  > 84|         $this->info('Your import was completed!');
+    85|     }
+    86| }
+    87|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '$this' (T_VARIABLE)
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:84
+    80| 
+    81|         $user = $auth()->user();
+    82|         Mail::to($request)
+    83| 
+  > 84|         $this->info('Your import was completed!');
+    85|     }
+    86| }
+    87|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+
+   Symfony\Component\Debug\Exception\FatalErrorException  : Cannot use Mail as Mail because the name is already in use
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:10
+     6| use Illuminate\Support\Facades\Mail;
+     7| 
+     8| use App\Product;
+     9| use App\User;
+  > 10| use Mail;
+    11| 
+    12| class ImportProducts extends Command
+    13| {
+    14|     /**
+
+
+   Whoops\Exception\ErrorException  : Cannot use Mail as Mail because the name is already in use
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:10
+     6| use Illuminate\Support\Facades\Mail;
+     7| 
+     8| use App\Product;
+     9| use App\User;
+  > 10| use Mail;
+    11| 
+    12| class ImportProducts extends Command
+    13| {
+    14|     /**
+
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '}'
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:89
+    85|         //     $message->to('kevinlevrone.r@gmail.com', 'To Kevin')->subject('Test Email!');
+    86|         //     $message->from('kevinlevrone.r@gmail.com', 'Kevin');
+    87|         // });
+    88| 
+  > 89|         {{MailController::send()}}
+    90| 
+    91|         
+    92| 
+    93|         $this->info('Your import was completed!');
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : Class 'App\Http\Controllers\Command' not found
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:22
+    18| use Illuminate\Support\Facades\Auth;
+    19| use App\Http\Requests;
+    20| use App\Http\Controllers\Controller;
+    21| 
+  > 22| class ImportProducts extends Command
+    23| {
+    24|     /**
+    25|      * The name and signature of the console command.
+    26|      *
+
+  Exception trace:
+
+  1   include()
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:412
+
+  2   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  Please use the argument -v to see more details.
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '$this' (T_VARIABLE), expecting ')'
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:100
+     96| 
+     97|             }
+     98|             
+     99|             
+  > 100|             $this->info('Your import was completed!');
+    101|             
+    102|             return view('index');
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '{', expecting ')'
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:92
+    88|             // $user = $auth()->user();
+    89|         
+    90|             Mail::raw('arquivo(s) CSV importado(s) e cadastrado(s) na tabela "produtos" do Banco de Dados do sistema', function($message){
+    91|                 
+  > 92|                 $message->to('kevinlevrone.r@gmail.com', {{auth()->user()->name;}} )->subject('Sistema Vintage');
+    93|                 $message->from('Vintagesystem@gmail.com', 'Vintage');
+    94|             });
+    95|             
+    96|             $this->info('Your import was completed!');
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '{', expecting ')'
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:92
+    88|             // $user = $auth()->user();
+    89|         
+    90|             Mail::raw('arquivo(s) CSV importado(s) e cadastrado(s) na tabela "produtos" do Banco de Dados do sistema', function($message){
+    91|                 
+  > 92|                 $message->to('kevinlevrone.r@gmail.com', {{Auth::user()->name}})->subject('Sistema Vintage');
+    93|                 $message->from('Vintagesystem@gmail.com', 'Vintage');
+    94|             });
+    95|             
+    96|             $this->info('Your import was completed!');
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '}', expecting ')'
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:102
+     98|             
+     99|             return view('index');
+    100|         }
+    101|         
+  > 102|     }
+    103| }
+    104|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '}', expecting ')'
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:102
+     98|             
+     99|             return view('index');
+    100|         }
+    101|         
+  > 102|     }
+    103| }
+    104|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '}', expecting ')'
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:102
+     98|             
+     99|             return view('index');
+    100|         }
+    101|         
+  > 102|     }
+    103| }
+    104|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '}', expecting ')'
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:102
+     98|             
+     99|             return view('index');
+    100|         }
+    101|         
+  > 102|     }
+    103| }
+    104|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '}', expecting ')'
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:102
+     98|             
+     99|             return view('index');
+    100|         }
+    101|         
+  > 102|     }
+    103| }
+    104|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '}', expecting ')'
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:102
+     98|             
+     99|             return view('index');
+    100|         }
+    101|         
+  > 102|     }
+    103| }
+    104|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '}', expecting ')'
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:102
+     98|             
+     99|             return view('index');
+    100|         }
+    101|         
+  > 102|     }
+    103| }
+    104|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '}', expecting ')'
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:102
+     98|             
+     99|             return view('index');
+    100|         }
+    101|         
+  > 102|     }
+    103| }
+    104|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '}', expecting ')'
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:104
+    100|             
+    101|             return view('index');
+    102|         }
+    103|         
+  > 104|     }
+    105| }
+    106|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '}', expecting ')'
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:104
+    100|             
+    101|             return view('index');
+    102|         }
+    103|         
+  > 104|     }
+    105| }
+    106|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '}', expecting ')'
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:104
+    100|             
+    101|             return view('index');
+    102|         }
+    103|         
+  > 104|     }
+    105| }
+    106|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '}', expecting ')'
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:112
+    108|             
+    109|             return view('index');
+    110|         }
+    111|         
+  > 112|     }
+    113| }
+    114|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '}', expecting ')'
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:112
+    108|             
+    109|             return view('index');
+    110|         }
+    111|         
+  > 112|     }
+    113| }
+    114|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '}', expecting ')'
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:112
+    108|             
+    109|             return view('index');
+    110|         }
+    111|         
+  > 112|     }
+    113| }
+    114|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '}', expecting ')'
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:112
+    108|             
+    109|             return view('index');
+    110|         }
+    111|         
+  > 112|     }
+    113| }
+    114|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:47
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:44
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected 'return' (T_RETURN)
+
+  at /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:42
+    38|     {
+    39| 
+    40|         $this->middleware(function ($request, $next){
+    41|             $this->user = Auth::user()
+  > 42|             return $next($request);
+    43|         });
+    44| 
+    45|         parent::__construct();
+    46|     }
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("/home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php")
+      /home/kevin-lev/Desktop/laravelVintage/vendor/composer/ClassLoader.php:301
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Console\Commands\ImportProducts")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+
+   BadMethodCallException  : Method App\Console\Commands\ImportProducts::middleware does not exist.
+
+  at /home/kevin-lev/Desktop/laravelVintage/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("middleware")
+      /home/kevin-lev/Desktop/laravelVintage/app/Console/Commands/ImportProducts.php:43
+
+  2   App\Console\Commands\ImportProducts::__construct()
+      [internal]:0
+
+  Please use the argument -v to see more details.
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1

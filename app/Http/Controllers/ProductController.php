@@ -6,11 +6,12 @@ use Illuminate\Http\Request;
 use App\Product;
 use App\Tags;
 use App\Photo;
-use Maatwebsite\Excel\Facades\Excel;
 use DB;
+
 
 class ProductController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *
@@ -115,23 +116,7 @@ class ProductController extends Controller
         
         $csv = $request->file('csv');
 
-        // $file = fopen($csv, 'r');
-        // $all_data = array();
-        // $cont = 1;
-        // while(($data = fgetcsv($file, 200000, ",")) !== FALSE){
-            
-
-        //     $product = new Product();
-        //     $product->name = $data[0];
-        //     $product->subname = $data[1];
-        //     $product->price = (int) $data[2];
-        //     $product->description = $data[3];
-
-        //     $product->save();
-            
-        // }
-
-        $csv->storeAs('csv files', $csv->getClientOriginalName());
+        $csv->storeAs('csv files/not imported', $csv->getClientOriginalName());
 
         return redirect('products');        
         

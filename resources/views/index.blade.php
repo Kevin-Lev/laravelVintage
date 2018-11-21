@@ -148,7 +148,7 @@
           <input type="text" class="form-control" placeholder="Search..." id="search">
         </div>
         <div class="col-md-1">
-          <td><button type="button" class="btn btn-primary btn-md">SEARCH</button>
+            <td><button type="submit" class="btn btn-primary btn-md">SEARCH</button>
         </div>
       </div>
 

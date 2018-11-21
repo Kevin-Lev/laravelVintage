@@ -40,3 +40,7 @@ Route::get('/tagDelete/{id}', 'TagController@destroy');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/send', 'MailController@send');
+
+

@@ -3,8 +3,15 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-
+// use Illuminate\Support\Facades\Auth;
 use App\Product;
+// use App\User;
+use Mail;
+
+// use Illuminate\Http\Request;
+// use App\Http\Requests;
+use App\Http\Controllers\MailController;
+
 
 class ImportProducts extends Command
 {
@@ -29,6 +36,7 @@ class ImportProducts extends Command
      */
     public function __construct()
     {
+
         parent::__construct();
     }
 
@@ -76,6 +84,25 @@ class ImportProducts extends Command
             rename('storage/app/public/csv files/not imported/'.$file['filename'].'.csv', 'storage/app/public/csv files/imported/'.$file['filename'].'.csv');
         }
 
-        $this->info('Your import was completed!');
+        
+        if(!empty($filesInPublic)){ 
+        
+            // Mail::raw('arquivo(s) CSV importado(s) e cadastrado(s) na tabela "produtos" do Banco de Dados do sistema', function($message){
+                
+            //     $message->to('kevinlevrone.r@gmail.com',  Auth::user()->name)->subject('Sistema Vintage');
+            //     $message->from('Vintagesystem@gmail.com', 'Vintage');
+            // });
+            
+            // $this->info('Your import was completed!');
+            
+            // return view('index');
+
+            // app()->make(\App\Http\Controllers\MailController::MailController)->send();
+            // app('App\Http\Controllers\MailController')->send();
+            $mail =  new MailController();
+            $mail->send();
+
+        }
+        
     }
 }
