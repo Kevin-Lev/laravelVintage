@@ -98,7 +98,7 @@ class ProductController extends Controller
     public function edit($id)
     {
         $product = Product::find($id);
-        $photo = DB::table('photos')->where('product_id', '=', $id)->get();
+        $photo = DB::table('photos')->where([['product_id', '=', $id], ['deleted_at', '=', null]])->get();
         $tag = DB::table('tags')->where('product_id', '=', $id)->get();
         
         return view('edit', compact('product', 'id'), ['photo' => $photo, 'tag' => $tag]);
@@ -139,7 +139,7 @@ class ProductController extends Controller
         $product->save();
 
 
-        $photos = DB::table('photos')->where('product_id', '=', $id)->get();
+        $photos = DB::table('photos')->where([['product_id', '=', $id], ['deleted_at', '=', null]])->get();
         $tags = DB::table('tags')->where('product_id', '=', $id)->get();
 
 
@@ -148,7 +148,7 @@ class ProductController extends Controller
 
 
         foreach($tags as $tag){
-            if(DB::table('tags')->where('id', '=', $tag->id)->get()){  //Se já estiver no BD, então não salva
+            if(DB::table('tags')->where('id', '==', $tag->id)->get()){  //Se já estiver no BD, então não salva
                 continue;
             }
             else{
@@ -168,6 +168,7 @@ class ProductController extends Controller
             $newPhoto->created_at = $photo->created_at;
             $newPhoto->product_id = $photo->product_id;
             $newPhoto->updated_at = $photo->updated_at;
+            $newPhoto->deleted_at = $photo->deleted_at;
             $newPhoto->save();
         }
 

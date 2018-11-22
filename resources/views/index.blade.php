@@ -59,8 +59,7 @@
 
       tr:hover {background-color:#f5f5f5;}
       
-      
-
+    
       .container-fluid{
         /* position: relative; */
         margin-top: 120px;
@@ -237,6 +236,7 @@
     </div>
 
  </div>
+</div>
 
   </body>
 </html>

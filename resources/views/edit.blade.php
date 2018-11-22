@@ -1,7 +1,5 @@
 <!-- products.blade.php -->
 
-
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -30,7 +28,6 @@
         $("#lugarDosInputsDasTags").append("<input type='hidden' name='tags[]' value='"+tagNoInput+"'>").append("<div class='col';'><a href='' class='btn btn-danger btn-xs' style='font-size:9px'>X</a></div>");
         
 
-
         // limpar o campo
         $("#tag").val("");
       }
@@ -48,9 +45,9 @@
     </script>
 
     <style>
-      .container{
+      .container-fluid{
         position: relative;
-        top: 200px;
+        top: 120px;
       }
       .top-buffer{
         padding-top: 60px;
@@ -131,158 +128,145 @@
 
       }
 
-      .colInputs{
-        margin-right: 110px;
-      }
 
     </style>
 
-
-    <div class="container">
-      
-        <input name="_method" type="hidden" value="PATCH">
-        <div class="row row-vintage">
-          <div class="col-md-8 vimage">
-            <img src="/images/vintage.png">
-          </div>
-          <div class="col-md-2 row-person">
-            <img src="/images/personIcon.png">
-          </div>
-          <div class="col-md-2">
-            <form id="logout-form" action="{{ route('logout') }}" method="POST">
-              @csrf
-              <button type="submit" class="btn-primary-outline btn-sm">SIGN OUT</button>
-          </form>
-          </div>
-        </div>
-
-
-      <form method="POST" action="{{action('ProductController@update', $id)}}" enctype="multipart/form-data">
-          {{ csrf_field() }}
-          {{ method_field('PUT') }}
-        <div class="row top-buffer">
-          <div class="col-md-2">
-            <button type="button" class="btn-primary-menu">MENU</button>
-          </div>
-          <div class="col-md-1">
-            <td><button type="submit" class="btn btn-success btn-md">UPDATE</button>
-          </div>
-          <div class="col-md-1">
-            <a href="/products" class="btn btn-primary btn-md">CANCEL</a>
-          </div>
-          <div class="col-md-2">
-            {{-- <form action="{{action('ProductController@destroy', $product['id'])}}" method="post">
-              @csrf
-              <input name="_method" type="hidden" value="DELETE">
-              <button class="btn btn-danger" type="submit">DELETE</button>
-            </form> --}}
-          </div>
-          <div class="col-md-1">
-              <a href="{{ url('/preview/'.$id)}}"><span class="btn btn-primary">PREVIEW</span></a>
-          </div>
-        </div>
-
+    <<div class="col-md-10 offset-md-1">
+      <div class="container-fluid">
         
-          <div class="row table-buffer">
-            <div class="col">
-                <div class="row">
-                  <a href="/products" class="btn btn-primary-outline btn-sm">PRODUCTS</a>
-                </div>
-
-                <div class="row">
-                  <button type="button" class="btn btn-primary-outline btn-sm">ORDERS</button>
-                </div>
+          <input name="_method" type="hidden" value="PATCH">
+          @include('layouts.header')
 
 
-                <div class="row">
-                  <button type="button" class="btn btn-primary-outline btn-sm">CUSTOMERS</button>
+        <form method="POST" action="{{action('ProductController@update', $id)}}" enctype="multipart/form-data">
+            {{ csrf_field() }}
+            {{ method_field('PUT') }}
+          <div class="row top-buffer">
+            <div class="col-md-2">
+              <button type="button" class="btn-primary-menu">MENU</button>
+            </div>
+            <div class="col-md-1" style="">
+              <td><button type="submit" class="btn btn-success btn-md">UPDATE</button>
+            </div>
+            <div class="col-md-1">
+              <a href="/products" class="btn btn-primary btn-md">CANCEL</a>
+            </div>
+            <div class="col-md-2">
+              {{-- <form action="{{action('ProductController@destroy', $product['id'])}}" method="post">
+                @csrf
+                <input name="_method" type="hidden" value="DELETE">
+                <button class="btn btn-danger" type="submit">DELETE</button>
+              </form> --}}
+            </div>
+            <div class="col-md-1">
+                <a href="{{ url('/preview/'.$id)}}"><span class="btn btn-primary">PREVIEW</span></a>
+            </div>
+          </div>
+
+          
+            <div class="row table-buffer">
+              <div class="col-md-2">
+                  <div class="row">
+                    <a href="/products" class="btn btn-primary-outline btn-sm">PRODUCTS</a>
+                  </div>
+
+                  <div class="row">
+                    <button type="button" class="btn btn-primary-outline btn-sm">ORDERS</button>
+                  </div>
+
+
+                  <div class="row">
+                    <button type="button" class="btn btn-primary-outline btn-sm">CUSTOMERS</button>
+                  </div>
+
+                  <div class="row">
+                    <button type="button" class="btn btn-primary-outline btn-sm">ANALYTICS</button>
+                  </div>
+
+                  <div class="row">
+                    <button type="button" class="btn btn-primary-outline btn-sm">DISCOUNTS</button>
+                  </div>
+
+                  <div class="row">
+                    <button type="button" class="btn btn-primary-outline btn-sm">APPS</button>
+                  </div>
                 </div>
 
-                <div class="row">
-                  <button type="button" class="btn btn-primary-outline btn-sm">ANALYTICS</button>
-                </div>
+                  <div class="col" style="margin-right:100px;">
+                    <div class="row">
+                      <input type="text" class="form-control" placeholder="Product name" name="name" value="{{$product->name}}" style="width: 270px; ">
+                  </div>
 
-                <div class="row">
-                  <button type="button" class="btn btn-primary-outline btn-sm">DISCOUNTS</button>
-                </div>
+                    <div class="row" style="padding-top: 30px;">
+                        <input type="text" class="form-control" placeholder="Product subname" name="subname" value="{{$product->subname}}" style="width: 270px">
+                    </div>
 
-                <div class="row">
-                  <button type="button" class="btn btn-primary-outline btn-sm">APPS</button>
-                </div>
+
+                    <div class="row" style="padding-top: 30px;">
+                        <input type="number" class="form-control" placeholder="Price" name="price" value="{{$product->price}}" style="width: 270px;">
+                    </div>
+
+
+                    <div class="row" style="padding-top: 40px;">
+                      
+                        <textarea class="form-control " placeholder="Description" name="description" style="height: 190px;width: 270px;">{{$product->description}}</textarea>
+                      
+                    </div>
+
+                  </div>
+
+                  <div class="col">
+                    <div class="row">
+                      <span class="label label-primary-image">IMAGE</span>
+                    </div>
+                    <div class="row">
+                        @foreach ($photo as $pho)
+                          @if($pho->deleted_at == NULL)
+                              <img src="{{asset("storage/categories/$pho->name")}}" alt="{{$pho->name}}" height="80" width="80">
+                              <a href="{{ url('/photoStore/'.$pho->product_id.'/'.$pho->id)}}"><span class="glyphicon glyphicon-trash"></span></a>
+                          @endif
+                        @endforeach
+                      
+                    </div>
+                    <div class="row" style="padding-top:20px">
+                        <input type="text" class="form-control" placeholder="Tag" name="tag"  id="tag" style="width:200px">
+                        <a  onclick="inserirTag()" class="btn btn-primary" style="margin-left:30px;">ADD</a>
+                    </div>
+
+                    <div class="row" style="padding-top:10px;">
+                          <div id="lugarDasTags">
+                            
+                          </div>
+                          
+                          <div id="lugarDosInputsDasTags">
+
+                          </div>
+                        </div>
+
+                  </div>
+
+                  @foreach ($tag as $t)
+                    <script>
+                      showTag({!! json_encode($t) !!});
+                    </script>
+                      
+                  @endforeach
+
+                  <div class="col" style="padding-right:50px;">
+                      <input type="file" name="image[]" multiple> 
+                      {{-- <a  onclick="inserirTag()" class="btn btn-primary" style="margin-top:212px">ADD</a> --}}
+                  </div>
+
               </div>
 
-                <div class="col colInputs">
-                  <div class="row" style="padding-left: 15px;">
-                    <input type="text" class="form-control" placeholder="Product name" name="name" value="{{$product->name}}" style="width: 270px; ">
-                </div>
-
-                  <div class="row" style="padding-top: 30px; padding-left:15px;">
-                      <input type="text" class="form-control" placeholder="Product subname" name="subname" value="{{$product->subname}}" style="width: 270px">
-                  </div>
-
-
-                  <div class="row" style="padding-top: 30px;padding-left:15px;">
-                      <input type="number" class="form-control" placeholder="Price" name="price" value="{{$product->price}}" style="width: 270px;">
-                  </div>
-
-
-                  <div class="row" style="padding-top: 40px; padding-right: 20px;">
-                    <div class="col">
-                      <textarea class="form-control " placeholder="Description" name="description" style="height: 190px;width: 270px;">{{$product->description}}</textarea>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="col" style="margin-right:0px">
-                  <div class="row">
-                    <span class="label label-primary-image">IMAGE</span>
-                  </div>
-                  <div class="row">
-                    {{-- <img src="{{asset("storage/categories/$photo->name")}}" alt="{{$photo->name}}" height="120" width="120"> --}}
-                    
-                      @foreach ($photo as $pho)
-                        <img src="{{asset("storage/categories/$pho->name")}}" alt="{{$pho->name}}" height="80" width="80">
-                        <a href="{{ url('/photoStore/'.$pho->product_id.'/'.$pho->id)}}"><span class="glyphicon glyphicon-trash"></span></a>
-                      @endforeach
-                    
-                   </div>
-                   <div class="row" style="padding-top:20px">
-                      <input type="text" class="form-control" placeholder="Tag" name="tag"  id="tag" style="width:200px">
-                      <div class="row" style="padding-top:10px;">
-                        <div id="lugarDasTags">
-                          
-                        </div>
-                        
-                        <div id="lugarDosInputsDasTags">
-
-                        </div>
-                      </div>
-                  </div>
-
-                </div>
-
-                @foreach ($tag as $t)
-                  <script>
-                    showTag({!! json_encode($t) !!});
-                  </script>
-                    
-                @endforeach
-
-                <div class="col" style="padding-right:50px;">
-                    <input type="file" name="image[]" multiple> 
-                    <a  onclick="inserirTag()" class="btn btn-primary" style="margin-top:212px">ADD</a>
-                </div>
-
+            <div class="row row-label">
+              <div class="col-md-12">
+                <span class="label label-primary-outline">2018 Vintage - All rights reserved.</span>
+              </div>
             </div>
-
-          <div class="row row-label">
-            <div class="col-md-12">
-              <span class="label label-primary-outline">2018 Vintage - All rights reserved.</span>
-            </div>
-          </div>
-      </form>
-   </div>
+        </form>
+    </div>
+  </div>
 
   </body>
 </html>
