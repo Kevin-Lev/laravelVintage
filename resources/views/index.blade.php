@@ -1,5 +1,7 @@
 <!-- products.blade.php -->
 
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -47,15 +49,18 @@
       .table{
         text-align: center;
         background-color: white;
-        border: 1px solid;
-        border-color: #F5F5F5;
-        /* padding-left: 20px; */
-        /* width: 840px; */
+        border: 7px double #F5F5F5;
+        /* border-color: #F5F5F5; */
         overflow-y: auto;
-        height: 250px;
-        /* width: 550px; */
+        height: 350px;
         display:block;
+        
       }
+
+      tr:hover {background-color:#f5f5f5;}
+      
+      
+
       .container-fluid{
         /* position: relative; */
         margin-top: 120px;
@@ -66,7 +71,8 @@
 
       .top-buffer{
         padding-top: 60px;
-        background: #F5F5F5
+        background: #F5F5F5;
+        border-top: 2px solid #CECDCD;
       }
       .table-buffer{
         padding-top: 20px;
@@ -78,7 +84,7 @@
       }
 
       .row-label{
-        padding-top: 210px;
+        padding-top: 110px;
         padding-bottom: 20px;
         text-align: center;
         background: #F5F5F5;
@@ -121,7 +127,7 @@
 
   <div class="col-md-10 offset-md-1">
     <div class="container-fluid">
-      <div class="row row-vintage">
+      {{-- <div class="row row-vintage">
         <div class="col-md-8 vimage">
           <img src="/images/vintage.png">
         </div>
@@ -129,15 +135,15 @@
           <img src="/images/personIcon.png">
         </div>
         <div class="col-md-2">
-          {{-- <form action="/login" method="post">
-            <button type="submit" class="btn-primary-outline btn-sm">SIGN OUT</button>
-          </form> --}}
           <form id="logout-form" action="{{ route('logout') }}" method="POST">
               @csrf
               <button type="submit" class="btn-primary-outline btn-sm">SIGN OUT</button>
           </form>
         </div>
-      </div>
+      </div> --}}
+
+      
+      @include('layouts.header')
 
 
       <div class="row top-buffer">
@@ -148,7 +154,6 @@
           <a href="products/create" class="btn btn-primary btn-md">ADD PRODUCT</a>
         </div>
         <div class="col-md-3">
-          {{-- <td><button type="button" class="btn btn-primary btn-md">IMPORT PRODUCT</button> --}}
             <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#exampleModalCenter">IMPORT PRODUCT</button>
         </div>
         <div class="col-xs-3">
@@ -192,11 +197,11 @@
         <div class="col-md-8">
           <table class="table">
             <thead>
-              <tr>
+              <tr hover>
                 <th class="text-center" style="width:300px;">Product Name</th>
                 <th class="text-center" style="width:300px;">Product Subname</th>
                 <th class="text-center" style="width:300px;">Price</th>
-                <th class="text-center" style="width:200px;">Actions</th>
+                <th class="text-right" style="width:200px;">Actions</th>
               </tr>
             </thead>
             <tbody>
