@@ -51,7 +51,8 @@
       }
       .top-buffer{
         padding-top: 60px;
-        background: #F5F5F5
+        background: #F5F5F5;
+        border-top: 2px solid #CECDCD;
       }
       .table-buffer{
         padding-top: 20px;
