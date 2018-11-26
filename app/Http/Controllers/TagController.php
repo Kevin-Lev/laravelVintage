@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use \App\Tags;
+use DB;
+
 
 class TagController extends Controller
 {
@@ -33,15 +35,15 @@ class TagController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, $product)
     {
-      $tag = new Tags();
-      $tag->name = $request->name;
-      $tag->product_id = 1;
-      $tag->save();
-
-      return view('create');
-    }  
+      foreach ($request->get("tags") as  $tagForm) {
+            $tag = new Tags();
+            $tag->name = $tagForm;
+            $tag->product_id = $product->id;
+            $tag->save();
+      }
+    }
 
     /**
      * Display the specified resource.
@@ -72,13 +74,34 @@ class TagController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $product)
     {
-      $tag = Tags::where('product_id', $id)->first();
-      $tag->name = $request->get('tag');
-      $tag->save();
+      $tags = DB::table('tags')->where('product_id', '=', $product->id)->get();
+      DB::table('tags')->where('product_id', '=', $product->id)->delete();
 
-      return redirect('products/$id/edit');
+      foreach($tags as $tag){
+            if(DB::table('tags')->where('id', '==', $tag->id)->get()){  //Se já estiver no BD, então não salva
+                continue;
+            }
+            else{
+                $newTag = new Tags();
+                $newTag->id = $tag->id;
+                $newTag->name = $tag->name;
+                $newTag->created_at = $tag->created_at;
+                $newTag->product_id = $tag->product_id;
+                $newTag->updated_at = $tag->updated_at;
+                $newTag->save();
+            }
+        }
+
+        if($request->get("tags") != null){
+            foreach ($request->get("tags") as  $tagForm) {
+                $tag = new Tags();
+                $tag->name = $tagForm;
+                $tag->product_id = $product->id;
+                $tag->save();
+            }
+        }
 
     }
 

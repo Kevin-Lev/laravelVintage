@@ -49,31 +49,11 @@ class ProductController extends Controller
         $product->description = $request->get('description');
         $product->save();
         
+        $tagControl = new TagController();
+        $tagControl->store($request, $product);
 
-        foreach ($request->get("tags") as  $tagForm) {
-            $tag = new Tags();
-            $tag->name = $tagForm;
-            $tag->product_id = $product->id;
-            $tag->save();
-        }
-
-        $images = $request->file('image');
-
-         if($request->hasFile('image')){
-             $cont = 0;
-             foreach($images as $image){
-                // $request->image->extension();
-                $cont++;
-                
-                $image->storeAs('categories', $product->id.'-'.$product->name.'-img'.$cont.\File::extension($image));
-            
-                $photo = new Photo();
-                $photo->name = $product->id.'-'.$product->name.'-img'.$cont.\File::extension($image);
-                $photo->product_id = $product->id;
-                $photo->save();
-             }
-        }
-
+        $photoControl = new PhotoController();
+        $photoControl->store($request, $product);
 
         return redirect('products')->with('success', 'Information has been added');
     }
@@ -139,71 +119,12 @@ class ProductController extends Controller
         $product->save();
 
 
-        $photos = DB::table('photos')->where([['product_id', '=', $id], ['deleted_at', '=', null]])->get();
-        $tags = DB::table('tags')->where('product_id', '=', $id)->get();
+        $photoControl = new PhotoController();
+        $photoControl->update($request, $product);
 
-
-        DB::table('photos')->where('product_id', '=', $id)->delete();
-        DB::table('tags')->where('product_id', '=', $id)->delete();
-
-
-        foreach($tags as $tag){
-            if(DB::table('tags')->where('id', '==', $tag->id)->get()){  //Se já estiver no BD, então não salva
-                continue;
-            }
-            else{
-                $newTag = new Tags();
-                $newTag->id = $tag->id;
-                $newTag->name = $tag->name;
-                $newTag->created_at = $tag->created_at;
-                $newTag->product_id = $tag->product_id;
-                $newTag->updated_at = $tag->updated_at;
-                $newTag->save();
-            }
-        }
-
-        foreach($photos as $photo){
-            $newPhoto = new Photo();
-            $newPhoto->name = $photo->name;
-            $newPhoto->created_at = $photo->created_at;
-            $newPhoto->product_id = $photo->product_id;
-            $newPhoto->updated_at = $photo->updated_at;
-            $newPhoto->deleted_at = $photo->deleted_at;
-            $newPhoto->save();
-        }
-
-        if($request->get("tags") != null){
-            foreach ($request->get("tags") as  $tagForm) {
-                $tag = new Tags();
-                $tag->name = $tagForm;
-                $tag->product_id = $product->id;
-                $tag->save();
-                
-            }
-        }
-
-        $images = $request->file('image');   
-
-        if($request->hasFile('image')){
-             $cont = count($photos);
-            
-             foreach($images as $image){
-                // $request->image->extension();
-                $cont++;
-                
-                while(count(DB::table('photos')->where('name', $id.'-'.$product->name.'-img'.$cont.\File::extension($image))->get()) != 0){
-                    $cont++;
-                }
-
-                $image->storeAs('categories', $id.'-'.$product->name.'-img'.$cont.\File::extension($image));
-            
-                $photo = new Photo();
-                $photo->name = $id.'-'.$product->name.'-img'.$cont.\File::extension($image);
-                $photo->product_id = $id;
-                $photo->save();
-             }
-        }
-
+        $tagControl = new TagController();
+        $tagControl->update($request, $product);
+        
 
       return redirect('products');
     }
