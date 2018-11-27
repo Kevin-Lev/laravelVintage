@@ -99,6 +99,17 @@
         margin-left: 65px;
       }
 
+      .inputfile {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+      }
+
+       
+
     </style>
 
 
@@ -124,7 +135,7 @@
                   <td><button type="button" class="btn btn-danger btn-md" disabled>DELETE</button>
                 </div> --}}
                 <div class="col-md-1">
-                  <td><button type="button" class="btn btn-primary btn-md">PREVIEW</button>
+                  <td><button type="button" class="btn btn-primary btn-md" disabled>PREVIEW</button>
                 </div>
               </div>
     
@@ -181,16 +192,20 @@
 
                 <div class="col">
                     <div class="row">
-                      <span class="label label-primary-image">IMAGE</span>
+                      <span class="label label-primary-image">IMAGES</span>
                     </div>
                     {{-- <div class="row"> 
                     </div> --}}
                     <div class="row" style="padding-top:20px">
-                        <input type="file" name="image[]" multiple> 
+                        <input type="file" name="image[]" id="fileimg" class="inputfile" multiple>
+                        <label for="fileimg" style="border:solid; border-color:#d9534f;border-width:6px; background-color:#d9534f; color:white; cursor: pointer;"> <span class="glyphicon glyphicon glyphicon-open"></span> Upload images...</label>
+                        <div class="offset-md-2">
+                          <input type="text" class="form-control" placeholder="Images..." name="fileName"  id="upload-file-info" readonly style="width:145px">
+                        </div>
                     </div>
-                    <div class="row">
+                    <div class="row" style="margin-top:125px;">
                         <input type="text" class="form-control" placeholder="Tag" name="tag"  id="tag" style="width:200px">
-                        <a  onclick="inserirTag()" class="btn btn-primary" style="margin-left:30px;">ADD</a>
+                        <a  onclick="inserirTag()" class="btn btn-primary" style="margin-left:30px;color:white">ADD</a>
                     </div>
 
                     <div class="row" style="padding-top:10px;">

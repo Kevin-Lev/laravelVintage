@@ -7,7 +7,9 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
 
@@ -72,7 +74,42 @@
         </div>
 
         <div class="col-md-4 offset-md-2">
-          <img src="{{asset("storage/categories/".$photo[0]->name)}}" alt="{{$photo[0]->name}}" height="350" width="350">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+            @if(count($photo) == 0)
+            <span class="label label-default" style="font-size:50px;">SEM IMAGENS</span></h1>
+            
+            @else
+              <ol class="carousel-indicators">
+                  @for($i = 1; $i < count($photo); $i++)
+                    <li data-target="#carouselExampleIndicators" data-slide-to="{{$i}}"></li>
+                  @endfor 
+                </ol>
+
+                <div class="carousel-inner" style="height:550px;">
+                  <div class="item active">
+                    <img class="d-block w-100" src="{{asset("storage/categories/".$photo[0]->name)}}" alt="{{$photo[0]->name}}">
+                  </div>
+
+                  @for($i = 1; $i < count($photo); $i++)
+                    <div class="item">
+                      <img class="d-block w-100" src="{{asset("storage/categories/".$photo[$i]->name)}}" alt="{{$photo[$i]->name}}">
+                    </div>
+                  @endfor
+                  
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              @endif
+          </div>
+         
+          {{-- <img src="{{asset("storage/categories/".$photo[0]->name)}}" alt="{{$photo[0]->name}}" height="350" width="350">
         
           <div class="row" style="margin-top:20px;">
             <div class="col offset-xs-2">
@@ -80,10 +117,11 @@
                 <img src="{{asset("storage/categories/$pho->name")}}" alt="{{$pho->name}}" height="80" width="80" class="rounded-0">
               @endforeach
             </div>
-          </div>
+          </div> --}}
+
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-5 offset-md-1">
           <h2 class="text-left" style="color:black">{{$product->name}}</h2>
 
           <div class="row">

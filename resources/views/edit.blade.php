@@ -129,6 +129,14 @@
 
       }
 
+      .inputfile {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+      }
 
     </style>
 
@@ -218,7 +226,7 @@
 
                   <div class="col">
                     <div class="row">
-                      <span class="label label-primary-image">IMAGE</span>
+                      <span class="label label-primary-image">IMAGES</span>
                     </div>
                     <div class="row">
                         @foreach ($photo as $pho)
@@ -229,7 +237,7 @@
                         @endforeach
                       
                     </div>
-                    <div class="row" style="padding-top:20px">
+                    <div class="row" style="margin-top:20px">
                         <input type="text" class="form-control" placeholder="Tag" name="tag"  id="tag" style="width:200px">
                         <a  onclick="inserirTag()" class="btn btn-primary" style="margin-left:30px;">ADD</a>
                     </div>
@@ -254,8 +262,9 @@
                   @endforeach
 
                   <div class="col" style="padding-right:50px;">
-                      <input type="file" name="image[]" multiple> 
-                      {{-- <a  onclick="inserirTag()" class="btn btn-primary" style="margin-top:212px">ADD</a> --}}
+                      <input type="file" name="image[]" id="fileimg" onchange="$('#upload-file-info').val($(this).val());" class="inputfile" multiple>
+                        <label for="fileimg"  style="border:solid; border-color:#d9534f;border-width:6px; background-color:#d9534f; color:white; cursor: pointer;"> <span class="glyphicon glyphicon glyphicon-open"></span> Upload images...</label>
+                        <input type="text" class="form-control" placeholder="Images..." name="fileName"  id="upload-file-info" readonly style="width:145px">
                   </div>
 
               </div>

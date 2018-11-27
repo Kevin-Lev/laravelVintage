@@ -83,7 +83,7 @@
       }
 
       .row-label{
-        padding-top: 110px;
+        padding-top: 81px;
         padding-bottom: 20px;
         text-align: center;
         background: #F5F5F5;
