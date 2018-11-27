@@ -197,6 +197,7 @@
           <table class="table">
             <thead>
               <tr hover>
+                {{-- <th class="text-center" style="width:10px;">Selecionar</th> --}}
                 <th class="text-center" style="width:300px;">Product Name</th>
                 <th class="text-center" style="width:300px;">Product Subname</th>
                 <th class="text-center" style="width:300px;">Price</th>
@@ -208,6 +209,11 @@
               @foreach($products as $product)
 
                 <tr>
+                  {{-- <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" style="margin-top:0" line-height="normal"></td>
+                    </div>
+                  </td> --}}
                   <td>{{$product['name']}}</td>
                   <td>{{$product['subname']}}</td>
                   <td>{{$product['price']}}</td>
@@ -218,7 +224,31 @@
                     <form action="{{action('ProductController@destroy', $product['id'])}}" method="post">
                       @csrf
                       <input name="_method" type="hidden" value="DELETE">
-                      <button class="btn btn-danger" type="submit">Delete</button>
+                      <button type="button" class="btn btn-danger btn-md" data-toggle="modal" data-target="#modalDelete{{$product->id}}">Delete</button>
+
+                       <div class="modal fade" id="modalDelete{{$product->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h3 class="modal-title" id="exampleModalCenterTitle"><b>Delete product</b></h3>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                  <h4>Do you really want to delete the product?</h4>
+
+
+                                   <h3> <b> {{$product['name']}} </b></h3>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                                  <button type="submit" class="btn btn-danger">Yes</button>  
+                                </div>
+                                
+                              </div>
+                            </div>
+                        </div>
                     </form>
                   </td>
                 </tr>
