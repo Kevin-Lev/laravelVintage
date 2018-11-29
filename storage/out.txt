@@ -4996,3 +4996,72 @@ No scheduled commands are ready to run.
 Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
 No scheduled commands are ready to run.
 No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+No scheduled commands are ready to run.
+Running scheduled command: '/usr/bin/php7.3' 'artisan' import-products:csv > '/dev/null' 2>&1
+No scheduled commands are ready to run.

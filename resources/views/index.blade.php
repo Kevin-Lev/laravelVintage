@@ -30,7 +30,7 @@
             </button>
           </div>
           <div class="modal-body">
-                <input type="file" name="csv" id="filecsv" class="inputfile" onchange="$('#upload-file-info').val($(this).val())" multiple accept=".csv">
+                <input type="file" name="csv[]" id="filecsv" class="inputfile" onchange="$('#upload-file-info').val($(this).val())" multiple accept=".csv">
                 <label for="filecsv" style="border:solid; border-color:#d9534f;border-width:6px; background-color:#d9534f; color:white; cursor: pointer;"> <span class="glyphicon glyphicon glyphicon-open"></span> Upload CSV...</label>
                 <input type="text" class="form-control" placeholder="Images..." name="fileName"  id="upload-file-info" readonly style="width:205px">
           </div>

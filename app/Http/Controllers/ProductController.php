@@ -94,9 +94,11 @@ class ProductController extends Controller
 
     public function uploadCsv(Request $request){
         
-        $csv = $request->file('csv');
+        $csvList = $request->file('csv');
 
-        $csv->storeAs('csv files/not imported', $csv->getClientOriginalName());
+        foreach($csvList as $csv){
+            $csv->storeAs('csv files/not imported', $csv->getClientOriginalName());
+        }
 
         return redirect('products');        
         
