@@ -47,22 +47,6 @@ class ImportProducts extends Command
      */
     public function handle()
     {
-        
-        // $file = fopen('storage/app/public/csv files/testeImport.csv', 'r');
-        // $all_data = array();
-        // $cont = 1;
-        // while(($data = fgetcsv($file, 200000, ",")) !== FALSE){
-            
-
-        //     $product = new Product();
-        //     $product->name = $data[0];
-        //     $product->subname = $data[1];
-        //     $product->price = (int) $data[2];
-        //     $product->description = $data[3];
-
-        //     $product->save();
-            
-        // }
 
         $filesInPublic = \File::files('storage/app/public/csv files/not imported');
 
@@ -86,19 +70,6 @@ class ImportProducts extends Command
 
         
         if(!empty($filesInPublic)){ 
-        
-            // Mail::raw('arquivo(s) CSV importado(s) e cadastrado(s) na tabela "produtos" do Banco de Dados do sistema', function($message){
-                
-            //     $message->to('kevinlevrone.r@gmail.com',  Auth::user()->name)->subject('Sistema Vintage');
-            //     $message->from('Vintagesystem@gmail.com', 'Vintage');
-            // });
-            
-            // $this->info('Your import was completed!');
-            
-            // return view('index');
-
-            // app()->make(\App\Http\Controllers\MailController::MailController)->send();
-            // app('App\Http\Controllers\MailController')->send();
             $mail =  new MailController();
             $mail->send();
 

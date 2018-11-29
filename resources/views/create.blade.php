@@ -131,9 +131,6 @@
                 <div class="col-md-3">
                   <a href="/products" class="btn btn-primary btn-md">CANCEL</a>
                 </div>
-                {{-- <div class="col-md-2">
-                  <td><button type="button" class="btn btn-danger btn-md" disabled>DELETE</button>
-                </div> --}}
                 <div class="col-md-1">
                   <td><button type="button" class="btn btn-primary btn-md" disabled>PREVIEW</button>
                 </div>
@@ -197,7 +194,7 @@
                     {{-- <div class="row"> 
                     </div> --}}
                     <div class="row" style="padding-top:20px">
-                        <input type="file" name="image[]" id="fileimg" class="inputfile" multiple>
+                        <input type="file" name="image[]" id="fileimg" class="inputfile" onchange="$('#upload-file-info').val($(this).val());" multiple accept="image/*">
                         <label for="fileimg" style="border:solid; border-color:#d9534f;border-width:6px; background-color:#d9534f; color:white; cursor: pointer;"> <span class="glyphicon glyphicon glyphicon-open"></span> Upload images...</label>
                         <div class="offset-md-2">
                           <input type="text" class="form-control" placeholder="Images..." name="fileName"  id="upload-file-info" readonly style="width:145px">
@@ -241,13 +238,14 @@
       //  pegar o que ta escrito no campo
       var tagNoInput = $("#tag").val();
       
+      
       // soltar um alert com o que escrito
       // alert(tagNoInput);
       
 
       //toda vez que o botão foi clicado, ele tem que inserir uma tag no lugarDasTags
       $("#lugarDasTags").append("<div class='col';'><button type='button' class='btn btn-primary btn-xs' style='font-size:10px'>"+tagNoInput+"</button></div>");
-      $("#lugarDosInputsDasTags").append("<input type='hidden' name='tags[]' value='"+tagNoInput+"'>");
+      $("#lugarDosInputsDasTags").append("<input type='hidden' name='tags[]' value='"+tagNoInput+"'>").append("<div class='col';'><a class='btn btn-danger btn-xs' style='font-size:9px; color:white'>X</a></div>");
 
 
       // limpar o campo

@@ -117,4 +117,6 @@ class TagController extends Controller
         $tag->delete();
         return redirect('products/'.$tag->product_id.'/edit');
     }
+
+    
 }

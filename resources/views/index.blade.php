@@ -1,7 +1,5 @@
 <!-- products.blade.php -->
 
-
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -32,16 +30,18 @@
             </button>
           </div>
           <div class="modal-body">
-                <input type="file" name="csv">
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary">Import</button>
-              </div>
-              
-            </div>
+                <input type="file" name="csv" id="filecsv" class="inputfile" onchange="$('#upload-file-info').val($(this).val())" multiple accept=".csv">
+                <label for="filecsv" style="border:solid; border-color:#d9534f;border-width:6px; background-color:#d9534f; color:white; cursor: pointer;"> <span class="glyphicon glyphicon glyphicon-open"></span> Upload CSV...</label>
+                <input type="text" class="form-control" placeholder="Images..." name="fileName"  id="upload-file-info" readonly style="width:205px">
           </div>
-        </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Import</button>
+          </div>
+              
+          </div>
+      </div>
+    </div>
   </form>
     
 
@@ -122,6 +122,16 @@
         color: black;
         font-family: sans-serif;
       }
+
+      .inputfile {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+      }
+
     </style>
 
   <div class="col-md-10 offset-md-1">
@@ -156,7 +166,7 @@
             <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#exampleModalCenter">IMPORT PRODUCT</button>
         </div>
         <div class="col-xs-3">
-          <input type="text" class="form-control" placeholder="Search..." id="search">
+          <input type="text" class="form-control" placeholder="Search..." name="search">
         </div>
         <div class="col-md-1">
             <td><button type="submit" class="btn btn-primary btn-md">SEARCH</button>
@@ -209,11 +219,6 @@
               @foreach($products as $product)
 
                 <tr>
-                  {{-- <td>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" style="margin-top:0" line-height="normal"></td>
-                    </div>
-                  </td> --}}
                   <td>{{$product['name']}}</td>
                   <td>{{$product['subname']}}</td>
                   <td>{{$product['price']}}</td>
