@@ -108,20 +108,9 @@
                 </a>
               @endif
           </div>
-         
-          {{-- <img src="{{asset("storage/categories/".$photo[0]->name)}}" alt="{{$photo[0]->name}}" height="350" width="350">
-        
-          <div class="row" style="margin-top:20px;">
-            <div class="col offset-xs-2">
-              @foreach ($photo as $pho)
-                <img src="{{asset("storage/categories/$pho->name")}}" alt="{{$pho->name}}" height="80" width="80" class="rounded-0">
-              @endforeach
-            </div>
-          </div> --}}
-
         </div>
 
-        <div class="col-md-5 offset-md-1">
+        <div class="col-md-4 offset-md-1">
           <h2 class="text-left" style="color:black">{{$product->name}}</h2>
 
           <div class="row">
@@ -140,8 +129,8 @@
             </div>
           </div>
 
-          <div class="row" style="margin-top:40px;">
-            <div class="col-md-5">
+          <div class="row" style="margin-top:40px;text-align:justify">
+            <div class="col-md-12">
               <h4> {{$product->description}} </h4>
             </div>
           </div>
@@ -155,7 +144,7 @@
           </div>
 
           <div class="row" style="margin-top:70px;">
-            <div class="col offset-md-1">
+            <div class="col offset-md-4">
               <button type='button' class='btn btn-primary btn-sm' style='font-size:18px; background-color:black'>ADD TO CART</button>
             </div>
           </div>

@@ -177,7 +177,7 @@
 
 
                     <div class="row" style="padding-top: 30px;">
-                        <input type="number" class="form-control" placeholder="Price" name="price" style="width: 270px;">
+                        <input type="number" class="form-control" placeholder="Price" name="price" style="width: 270px;" step="0.01">
                     </div>
 
 
@@ -191,8 +191,6 @@
                     <div class="row">
                       <span class="label label-primary-image">IMAGES</span>
                     </div>
-                    {{-- <div class="row"> 
-                    </div> --}}
                     <div class="row" style="padding-top:20px">
                         <input type="file" name="image[]" id="fileimg" class="inputfile" onchange="$('#upload-file-info').val($(this).val());" multiple accept="image/*">
                         <label for="fileimg" style="border:solid; border-color:#d9534f;border-width:6px; background-color:#d9534f; color:white; cursor: pointer;"> <span class="glyphicon glyphicon glyphicon-open"></span> Upload images...</label>

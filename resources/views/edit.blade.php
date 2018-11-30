@@ -207,7 +207,7 @@
 
 
                     <div class="row" style="padding-top: 30px;">
-                        <input type="number" class="form-control" placeholder="Price" name="price" value="{{$product->price}}" style="width: 270px;">
+                        <input type="number" class="form-control" placeholder="Price" name="price" value="{{$product->price}}" style="width: 270px;" step="0.01">
                     </div>
 
 
